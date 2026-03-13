@@ -37,6 +37,7 @@ This company is itself an agent-company instance — proving the framework works
 - `departments/operations/manager`
 - `departments/research/market-intel`
 - `departments/finance/manager`
+- `departments/engineering/ai-engineer`
 
 ## What Each Layer Does (Product Context)
 
@@ -57,6 +58,9 @@ Monitors the AI agent landscape — competing frameworks, emerging patterns, com
 
 ### Operations
 Manages the public repo workflow — issues, PRs, release notes, documentation quality. Keeps the company's internal operating cadence healthy.
+
+### Engineering
+Owns context engineering and framework improvement. Audits what each role reads, how prompts are structured, and whether the execution flow produces high-quality outputs. Maintains the context-loading spec and proposes AGENTS.md refinements across all roles.
 
 ### Finance
 Tracks costs (compute, API usage), sponsorship and partnership revenue, and sustainability metrics. Challenges assumptions about monetization.

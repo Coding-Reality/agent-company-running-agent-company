@@ -44,5 +44,6 @@ module.exports = {
     runAgent("departments/operations/manager", "8,23,38,53 * * * *"), // run every 15 minutes for ops review
     runAgent("departments/research/market-intel", "0 * * * *"), // run every hour for market intel
     runAgent("departments/finance/manager", "0 */2 * * *"), // run every 2 hours for financial review
+    runAgent("departments/engineering/ai-engineer", "30 * * * *"), // run every hour for context engineering audits
   ],
 };
