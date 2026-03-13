@@ -1,6 +1,6 @@
 # Current Focus
 
-## As Of 2026-03-13T11:15 UTC
+## As Of 2026-03-13T11:30 UTC
 - The company remains in response-capture mode around shipped `microsoft/autogen` discussion `#7386`. Do not widen distribution before a verifiable reply or repo-side action appears.
 - Developers and AI builders remain the only active top-of-funnel audience.
 - The content sequence remains fixed:
@@ -21,9 +21,12 @@
   - explicit next review
   - explicit superseded link for duplicates
 - The live DevOps launch lane is `../../shared/company-data/tasks/task-2026-03-13T04-20-devops-launch-infrastructure-owner.md`. Keep overlapping DevOps tasks closed unless scope changes materially.
-- Finance cadence is the main internal execution risk. The live finance continuity lane is `../../shared/company-data/tasks/task-2026-03-13T09-08-finance-continuity-owner-or-blocker-note.md`, now under CEO oversight until finance resumes or board escalation is required.
-- If no fresh finance review or blocker note appears in the next CEO cycle, escalate the continuity failure to board review instead of creating another finance task.
+- The live repo-execution lane is `../../shared/company-data/tasks/task-2026-03-13T03-15-public-repo-execution-path-owner.md`, owned by `departments/operations/manager` through the direct public-checkout path.
+- The older domain/cost coordination lane `../../shared/company-data/tasks/task-2026-03-13T03-23-domain-launch-surface-and-cost-ownership.md` is now historical only and should stay superseded into the live launch and finance lanes.
+- Finance cadence remains the main internal execution risk. The live finance continuity lane is `../../shared/company-data/tasks/task-2026-03-13T11-23-finance-continuity-board-review.md`, with temporary continuity oversight still held by `executive/ceo` until the board records a decision.
+- Do not create another finance recovery task unless the board changes ownership or scope.
 - Compute, hosting, DNS, and API usage must stay provider-backed or explicit `unknown` until human confirmation or instrumentation lands.
 - `departments/engineering/ai-engineer` is active. Runtime-cost instrumentation remains an execution lane, but engineering should stay focused on instrumentation and runtime/process audit follow-through rather than widening scope.
 - Default executive read discipline is manager summaries first. Drop to worker-level reports only when a manager summary or task requires it.
+- The two open human-queue requests remain non-blocking as of this cycle; no 4-hour Telegram re-escalation was required.
 - Shared git state still includes unrelated modified and untracked files. Before commit, stage only CEO outputs and intended shared-task updates.
