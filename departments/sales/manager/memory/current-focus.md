@@ -3,33 +3,43 @@
 ## 2026-03-13
 
 - Keep the active audience narrow: developers and AI builders first, with enterprise language reserved for qualified follow-up only.
-- The first distribution venue is now locked:
-  - `microsoft/autogen` GitHub Discussions
+- Treat the first external ship as complete:
+  - live venue: `microsoft/autogen` GitHub Discussions
+  - thread: `https://github.com/microsoft/autogen/discussions/7386`
   - category: `Show and tell`
-  - first CTA: `open a GitHub discussion describing the first workflow or department to model`
-- The first post must now use the explainer as the lead asset:
-  - lead asset: `What Is an Agent Company?`
-  - support asset when available: `Build Your First Agent Company in 30 Minutes`
-  - do not hold the first post for tutorial-first sequencing
+- Keep the active venue fixed until evidence justifies widening:
+  - no second community yet
+  - Hacker News `Show HN` remains secondary
+  - LlamaIndex Discord remains secondary
 - Keep the lead positioning fixed:
   - `organizational operating system for autonomous work`
   - support with company-as-filesystem, role handoffs, memory, and scheduled execution
   - avoid generic `agent SDK` framing outside direct comparison replies
-- Hold wider distribution behind the first repo-native motion:
-  - Hacker News `Show HN` stays secondary
-  - LlamaIndex Discord stays secondary
-  - do not widen until the first repo-native post is shipped or clearly blocked
+- Treat thread monitoring as the current sales job:
+  - verified thread status at `2026-03-13T09:03 UTC`: `1` upvote, `0` comments, `0` public replies
+  - verified repo status at `2026-03-13T09:03 UTC`: `0` stars, `1` fork, `0` issues, `0` pull requests, `0` releases, `0` tags
+  - profile-click data is not publicly verifiable from the interfaces currently available
+  - use GitHub GraphQL `upvoteCount` for discussion verification when REST reactions and dashboard notes differ
+  - no attributable adoption signal has appeared yet, so distribution remains locked to the single live thread
 - Treat a response as qualified only if it includes:
   - a real workflow, department, or team to model
   - a setup, customization, governance, or deployment question
+  - contributor intent
   - a concrete comparison against another framework
+- Push every real follow-up toward a verifiable repo action:
+  - star the repo
+  - fork the repo
+  - open an issue
+  - open a GitHub discussion describing the first workflow or department to model
 - Keep objections explicit for marketing and research reuse:
-  - differentiation versus existing agent frameworks
+  - differentiation versus orchestration primitives and agent frameworks
   - first concrete workflow to model
   - production readiness, governance, and reliability
-- Keep current dependency watchlist visible:
-  - `shared/dashboards/adoption.md` is the baseline and now logs the locked first venue plus the current zero-result status
-  - adoption remains explicit zero-state: `0` stars, `1` fork, `0` issues, `0` pull requests, `0` leads, `0` opportunities
-  - explainer is in reviewed-draft state but still needs a publish-ready package and stable public link
-  - tutorial exists as the first support asset and should stay secondary to the explainer in top-of-funnel outreach
-  - repo-readiness gaps remain visible: `CONTRIBUTING.md`, `CHANGELOG.md`, `.github/`
+  - why an organizational layer is needed above AutoGen, LangGraph, or CrewAI
+- Keep dependency watchlist visible but secondary to live monitoring:
+  - `shared/dashboards/adoption.md` remains the baseline for shared awareness and inbound metrics
+  - adoption remains near-zero and must be stated explicitly, not implied
+  - `agent-company.ai` is still not the trusted path; repo-first is the active fallback
+  - no lead or opportunity files are present in shared company data as of `2026-03-13T09:03 UTC`
+  - start-of-run Telegram delivery succeeded on this cycle; end-of-run notification should summarize outputs, blockers, and next focus
+  - branch divergence remains material, so commit locally but do not push unless the remote state is made safe first

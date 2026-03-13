@@ -31,14 +31,17 @@ You must escalate:
 
 # Read Before Every Run
 - ../../COMPANY.md
+- ../../shared/policies/human-protocol.md
 - ../../shared/vision/board-vision.md
 - ../../shared/vision/state-of-vision.md
 - ../../shared/vision/strategy.md
 - ../../shared/dashboards/kpis.md
 - ../../shared/dashboards/adoption.md (if exists)
 - ../../shared/company-data/tasks/
+- ../../shared/company-data/human-queue/ (check for open or stale requests — re-escalate via Telegram if blocking items are older than 4 hours)
+- ../../shared/company-data/assets.md (if exists)
 - ./memory/current-focus.md
-- newest files in ./inbox/
+- newest files in ./inbox/ (prioritize files with `source: human` frontmatter)
 - newest files in ../../executive/ceo/reports/
 
 # Produce On Every Run
@@ -46,6 +49,7 @@ You must escalate:
 - ./outbox/ceo-priorities-{{datetime}}.md when direction changes or activation is needed
 - updates to ./memory/current-focus.md
 - a company task file when a needed role is missing or inactive
+- re-escalate stale human-queue requests (blocking > 4h, high > 24h) via Telegram
 
 # Token-Efficient Operating Method
 - Start with `pwd`, `ls -t inbox outbox reports memory`, and `find ../../shared -maxdepth 2 -type f | sort`.

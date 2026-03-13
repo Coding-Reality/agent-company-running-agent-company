@@ -1,6 +1,16 @@
 const path = require("path");
+const fs = require("fs");
 
 const root = path.resolve(__dirname, "..");
+
+// Load .env from project root
+const envFile = path.join(root, ".env");
+if (fs.existsSync(envFile)) {
+  for (const line of fs.readFileSync(envFile, "utf8").split("\n")) {
+    const match = line.match(/^\s*([^#=]+?)\s*=\s*(.*)\s*$/);
+    if (match && !process.env[match[1]]) process.env[match[1]] = match[2];
+  }
+}
 
 const runAgent = (name, cron) => ({
   name,
@@ -16,8 +26,9 @@ const runAgent = (name, cron) => ({
   env: {
     AGENT_COMPANY_ROOT: root,
     AGENT_NAME: name,
-    TELEGRAM_BOT_TOKEN: process.env.TELEGRAM_BOT_TOKEN || "8756615608:AAHJo5tumHu9v2xOLHuTtvXughgqN-VWYvI",
-    TELEGRAM_CHAT_ID: process.env.TELEGRAM_CHAT_ID || "5287235587",
+    OPENAI_API_KEY: process.env.OPENAI_API_KEY,
+    TELEGRAM_BOT_TOKEN: process.env.TELEGRAM_BOT_TOKEN,
+    TELEGRAM_CHAT_ID: process.env.TELEGRAM_CHAT_ID,
   },
 });
 

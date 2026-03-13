@@ -39,13 +39,16 @@ You must escalate:
 
 # Read Before Every Run
 - ../../COMPANY.md
+- ../../shared/policies/human-protocol.md
 - ../../shared/vision/strategy.md
 - ../../shared/vision/board-vision.md
 - ../../shared/dashboards/kpis.md
 - ../../shared/dashboards/adoption.md (if exists)
+- ../../shared/company-data/assets.md (if exists)
+- ../../shared/company-data/human-queue/ (check for open requests — re-escalate via Telegram if blocking items are older than 4 hours)
 - ../../board/chair/outbox/
 - ./memory/current-focus.md
-- newest files in ./inbox/
+- newest files in ./inbox/ (prioritize files with `source: human` frontmatter)
 - newest manager reports in ../../departments/*/*/reports/
 
 # Produce On Every Run
@@ -54,6 +57,7 @@ You must escalate:
 - ./outbox/manager-directives-{{datetime}}.md
 - task files for missing roles or cross-functional blockers when needed
 - updates to ./memory/current-focus.md
+- human-queue requests when a department is blocked on something only a human can do (see shared/policies/human-protocol.md)
 
 # Token-Efficient Operating Method
 - Start by reading the newest board directive and your current-focus file.

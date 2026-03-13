@@ -91,6 +91,15 @@ cat "$AGENT_DIR/AGENTS.md" >>"$PROMPT_FILE"
 tg_send "🟢 *[$AGENT_NAME]* run starting"
 # ────────────────────────────────────────────────────────────────
 
+if [[ -z "${OPENAI_API_KEY:-}" ]]; then
+  echo "error: OPENAI_API_KEY must be set in the environment" >&2
+  tg_send "❌ *[$AGENT_NAME]* failed — OPENAI_API_KEY not set"
+  exit 1
+fi
+
+# Ensure codex uses API key auth (not ChatGPT browser auth)
+echo "$OPENAI_API_KEY" | codex login --with-api-key 2>/dev/null || true
+
 codex exec --dangerously-bypass-approvals-and-sandbox - <"$PROMPT_FILE"
 EXIT_CODE=$?
 
@@ -103,3 +112,4 @@ fi
 # ────────────────────────────────────────────────────────────────
 
 exit $EXIT_CODE
+# 

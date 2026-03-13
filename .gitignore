@@ -2,3 +2,4 @@ runtime/logs/*.log
 runtime/snapshots/*
 runtime/run-history/*
 .DS_Store
+.env

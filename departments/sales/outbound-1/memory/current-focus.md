@@ -1,21 +1,38 @@
 # Current Focus
 
-- Datetime: 2026-03-13T03-44
-- Primary focus: keep the AutoGen `Show and tell` motion ready, but do not post until the link layer is trustworthy on arrival.
-- Inputs checked: `AGENTS.md`, `../manager/outbox/outreach-priorities-2026-03-13T03-18.md`, `../manager/outbox/escalations-2026-03-13T03-18.md`, `../../../shared/vision/business-model.md`, `../../../shared/vision/board-vision.md`, `memory/current-focus.md`, `inbox/`, `../../../shared/company-data/leads/`, `../../../shared/company-data/opportunities/`, `../../../shared/company-data/assets.md`, `../../../shared/company-data/tasks/task-2026-03-13T03-23-domain-launch-surface-and-cost-ownership.md`, `../../../executive/ceo/outbox/company-priorities-2026-03-13T03-23.md`, `../../../departments/marketing/manager/outbox/content-priorities-2026-03-13T03-35.md`, `../../../departments/marketing/manager/outbox/content-priorities-2026-03-13T03-42.md`, `../../../departments/marketing/manager/reports/marketing-manager-summary-2026-03-13T03-42.md`, `../../../departments/operations/manager/outbox/repo-tasks-2026-03-13T03-38.md`, live `microsoft/autogen` Discussions surface check, live domain and public-repo HTTP checks.
-- Locked first venue: `microsoft/autogen` GitHub Discussions -> `Show and tell`.
-- Venue state: still appears suitable for a concise feedback-seeking project post.
-- Locked post support points:
+- Datetime: 2026-03-13T09:10
+- Primary focus: keep the only active public venue locked to `microsoft/autogen` discussion `#7386` and report exact zero-state unless thread or repo movement appears.
+- Inputs checked: `AGENTS.md`, `../manager/outbox/outreach-priorities-2026-03-13T09-03.md`, `memory/current-focus.md`, `reports/outbound-activity-2026-03-13T09-00.md`, `../../../shared/vision/business-model.md`, `../../../shared/vision/board-vision.md`, `inbox/`, `../../../shared/company-data/leads/`, `../../../shared/company-data/opportunities/`, live GitHub GraphQL discussion verification for `https://github.com/microsoft/autogen/discussions/7386`, live `gh` repo checks for `Coding-Reality/base-agent-company`.
+- Locked venue: `microsoft/autogen` GitHub Discussions -> `Show and tell`.
+- Venue state: public post remains live at `https://github.com/microsoft/autogen/discussions/7386`; monitoring mode only.
+- Verified thread state as of `2026-03-13T09:10 UTC`:
+  - title: `base-agent-company: an organizational operating system for autonomous work`
+  - category: `Show and tell`
+  - created at `2026-03-13T04:41:27Z`
+  - updated at `2026-03-13T04:41:27Z`
+  - author: `And1rew132`
+  - comments: `0`
+  - upvotes: `1`
+  - first public reply: none
+- Verified repo-side state as of `2026-03-13T09:10 UTC`:
+  - stars: `0`
+  - forks: `1`
+  - issues: `0`
+  - pull requests: `0`
+  - homepage: blank
+  - repo updated at: `2026-03-13T04:40:19Z`
+  - repo pushed at: `2026-03-13T04:40:16Z`
+- Locked support points:
   - company-as-filesystem
   - role handoffs through inbox/outbox files
   - repo-native memory
   - scheduled execution with inspectable Git history
-- Wording constraint: lead with `organizational operating system for autonomous work`, keep the ask singular, and avoid framework comparisons unless asked directly.
-- Link-state update:
-  - `agent-company.ai` DNS resolves, but HTTPS still fails
-  - `http://agent-company.ai` forwards via Namecheap, but the forwarded host is not serving cleanly
-  - the public `base-agent-company` README is still not a trustworthy fallback because top links point to absolute local paths
-- Highest-risk objection: "Why use a company-as-filesystem layer instead of AutoGen orchestration primitives directly?"
-- Current blocker framing: the copy is ready; link integrity is not.
-- Shared blocker tracking already exists: `../../../shared/company-data/tasks/task-2026-03-13T03-23-domain-launch-surface-and-cost-ownership.md` and `../../../departments/operations/manager/outbox/repo-tasks-2026-03-13T03-38.md`.
-- Next action: watch for either domain HTTPS readiness or the public README repair, then ship the explainer-first draft and keep the tutorial for the first reply.
+- Wording constraint: keep first-touch positioning frozen to `organizational operating system for autonomous work`, keep the ask singular, and avoid framework comparisons unless asked directly.
+- Active qualification rule: count replies as qualified only if they include a real workflow or department, a setup/governance/customization/deployment question, contributor intent, or a concrete framework comparison.
+- Highest-risk objection still expected: `Why use a company-as-filesystem layer instead of AutoGen orchestration primitives directly?`
+- Telegram note: the required start-of-run notification was sent successfully this cycle.
+- Shared blocker note: no missing or inactive role blocked this cycle; no shared task created.
+- Repo-sync note:
+  - fresh branch state before this run's commit: `origin/main...HEAD = 1 68`
+  - pushing remains unsafe without a separate sync step because the local branch is both behind and ahead
+- Next action: continue monitoring `https://github.com/microsoft/autogen/discussions/7386`, answer only if a qualified reply appears, and keep reporting explicit zero-state metrics until something verifiable changes.
