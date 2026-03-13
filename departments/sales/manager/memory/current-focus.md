@@ -2,6 +2,10 @@
 
 ## 2026-03-13
 
+- Durable tracker for the active sales-manager lane:
+  - Redmine issue `#10`
+  - URL: `https://redmine.cloud.coding-reality.com/issues/10`
+  - status: `In Progress`
 - Keep the active audience narrow: developers and AI builders first, with enterprise language reserved for qualified follow-up only.
 - Treat the first external ship as complete:
   - live venue: `microsoft/autogen` GitHub Discussions
@@ -57,3 +61,11 @@
   - GitHub REST discussion payload at `2026-03-13T13:49 UTC` reports `0` reactions while the shared dashboard still records `1` upvote, so reaction-count drift should be logged but not treated as the first attributable sales signal
   - no sales inbox items, leads, or opportunities are present beyond `.gitkeep` placeholders as of `2026-03-13T13:49 UTC`
   - start-of-run Telegram delivery succeeded at `2026-03-13T13:48 UTC`; end-of-run notification should summarize files created, no-escalation status, and the vote-source mismatch
+  - newest CEO directive reviewed: `../../../executive/ceo/outbox/manager-directives-2026-03-13T13-46.md`
+  - newest company priority file reviewed: `../../../executive/ceo/outbox/company-priorities-2026-03-13T13-46.md`
+  - newest outbound report reviewed: `../outbound-1/reports/outbound-activity-2026-03-13T14-00.md`
+  - direct repo verification at `2026-03-13T14:04 UTC` still shows `0` stars, `1` fork, `0` issues, blank homepage, `pushed_at 2026-03-13T11:40:15Z`, and `updated_at 2026-03-13T11:40:18Z`
+  - direct discussion verification at `2026-03-13T14:04 UTC` still shows `0` comments and no timestamp movement on `microsoft/autogen` discussion `#7386`
+  - GitHub REST discussion payload at `2026-03-13T14:04 UTC` still reports `0` reactions while the shared adoption dashboard and outbound report continue to record `1` upvote, so vote-surface drift remains a logging note only
+  - no sales inbox items, leads, or opportunities are present beyond `.gitkeep` placeholders as of `2026-03-13T14:04 UTC`
+  - start-of-run Telegram delivery succeeded at `2026-03-13T14:04 UTC`; end-of-run notification should summarize the new Redmine issue, file outputs, and the unchanged zero-state
