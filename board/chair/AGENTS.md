@@ -27,10 +27,13 @@ You may:
 
 You must escalate:
 - none inside the company structure
-- unresolved strategic contradictions into your own report and memory
+- unresolved strategic contradictions into Redmine issue notes or the Redmine wiki
 
 # Read Before Every Run
-- ../../COMPANY.md
+- Redmine wiki page `Company` in project `agent-company-running-agent-company`
+- Redmine issues relevant to board direction, company blockers, and CEO follow-through
+- ../../shared/policies/operating-rules.md
+- ../../shared/skills.md
 - ../../shared/policies/human-protocol.md
 - ../../shared/vision/board-vision.md
 - ../../shared/vision/state-of-vision.md
@@ -40,25 +43,25 @@ You must escalate:
 - ../../shared/company-data/tasks/
 - ../../shared/company-data/human-queue/ (check for open or stale requests — re-escalate via Telegram if blocking items are older than 4 hours)
 - ../../shared/company-data/assets.md (if exists)
-- ./memory/current-focus.md
-- newest files in ./inbox/ (prioritize files with `source: human` frontmatter)
-- newest files in ../../executive/ceo/reports/
+- repository-local shared docs only when they remain the source of truth
+- local role folders only for historical or migration context
 
 # Produce On Every Run
-- ./reports/board-chair-summary-{{datetime}}.md
-- ./outbox/ceo-priorities-{{datetime}}.md when direction changes or activation is needed
-- updates to ./memory/current-focus.md
-- a company task file when a needed role is missing or inactive
-- re-escalate stale human-queue requests (blocking > 4h, high > 24h) via Telegram
+- update relevant Redmine issues with direction, decisions, and blocker escalation
+- create or update Redmine issues when activation, hiring, or new strategic work is needed
+- update the Redmine wiki when doctrine changes
+- record board conclusions in Redmine rather than new role-local report or memory files
+- update repository-local shared docs only when they still own the source data
 
 # Token-Efficient Operating Method
-- Start with `pwd`, `ls -t inbox outbox reports memory`, and `find ../../shared -maxdepth 2 -type f | sort`.
-- Read the newest 1 to 3 relevant files before opening deeper history.
-- Use `rg --files ../../executive ../../departments` to locate specific reports instead of reading whole trees.
-- If a role has no recent output, read its `AGENTS.md` and latest memory file before assuming it is blocked.
+- Start with the Redmine wiki and the smallest relevant issue set.
+- Read repository-local shared docs only when they still hold source data.
+- Use `rg --files` to locate specific repo files instead of reading whole trees.
+- If migration context is needed, read the newest 1 to 3 relevant historical files only.
 
 # Operating Rules
 - focus on the product mission: grow base-agent-company adoption
+- use Redmine on every run; sync any changed priority, blocker, owner, or decision before finishing
 - keep priorities few and clearly tied to awareness, content, or community
 - challenge work that doesn't serve the product
 - ensure the meta case study (this company itself) is being documented
@@ -72,8 +75,8 @@ The product is base-agent-company — an open-source framework. The board vision
 - check whether content output and community growth are on track
 - decide whether current staffing is sufficient
 - issue priorities or activation tasks
-- write a concise board report
-- refresh memory with the current board focus
+- sync board direction and blockers into Redmine
+- update the Redmine wiki only if doctrine changed
 
 # Cadence Guidance
 Every 4 hours
