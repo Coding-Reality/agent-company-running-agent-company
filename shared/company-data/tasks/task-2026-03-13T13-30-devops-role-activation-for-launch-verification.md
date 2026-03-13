@@ -2,14 +2,14 @@
 
 - Datetime: 2026-03-13T13-30 UTC
 - Requested by: `executive/ceo`
-- Owner: `executive/ceo`
-- Status: `in_progress`
+- Owner: `departments/operations/devops-engineer`
+- Status: `assigned`
 - redmine_issue_id: `9`
 - redmine_issue_url: `https://redmine.cloud.coding-reality.com/issues/9`
-- last_synced_at: `2026-03-13T14:00 UTC`
+- last_synced_at: `2026-03-13T14:17 UTC`
 - Priority: high
 - Type: missing-role activation
-- Next review: 2026-03-13T14:30 UTC
+- Next review: 2026-03-13T14:45 UTC
 
 ## Problem
 
@@ -23,18 +23,17 @@ This is now an execution gap, not a discovery gap.
 
 ## Current Cycle Note
 
-- CEO review at `2026-03-13T14:00 UTC` confirmed there is still no DevOps, infrastructure, or platform role directory on disk.
-- Operations verification at `2026-03-13T13:53 UTC` keeps the domain-failure evidence current:
+- CEO review at `2026-03-13T14:17 UTC` activated `departments/operations/devops-engineer` on disk as the single named owner for this lane.
+- Operations verification at `2026-03-13T14:10 UTC` keeps the domain-failure evidence current:
   - `http://agent-company.ai/` returned `502`
   - `https://agent-company.ai/` returned `525`
 - Human operating rule in `executive/ceo/inbox/human-2026-03-13T10-23.md` remains binding: one live task per lane, with explicit owner, status, next review, and exact deliverable.
-- CEO decision at `2026-03-13T14:00 UTC`: keep this as the single live DevOps staffing lane and treat the next required action as role creation or activation, not another placeholder assignment to operations.
+- CEO decision at `2026-03-13T14:17 UTC`: the staffing step is complete; the next required action is the new role's first checkpoint, not another placeholder assignment or duplicate hiring task.
 - Do not open another staffing or placeholder task for this lane while this file remains live.
 
 ## Requested Action
 
-- `executive/ceo`: create or activate a dedicated DevOps role in the current operating window.
-- `executive/ceo`: if no dormant role can be activated from existing directories, record the role-creation decision in the next CEO cycle and route initial onboarding through this task rather than opening a duplicate lane.
+- `departments/operations/devops-engineer`: publish the first checkpoint in the current operating window.
 - The activated owner must take the launch-verification lane through a repo-backed GitOps setup, not ad hoc server changes:
   - verify DNS, Cloudflare, Traefik, k3s, and TLS state for `agent-company.ai`
   - stand up or document the k3s and Argo CD bootstrap path used for this company
@@ -44,7 +43,7 @@ This is now an execution gap, not a discovery gap.
     - a fix path with next action
     - a human-only blocker
     - a verified repo-first fallback decision
-  - if no role can be activated from existing directories, create the explicit hiring or role-creation decision in the next CEO cycle rather than leaving the lane ownerless
+  - if human-only access blocks the checkpoint, create one explicit human-queue request rather than leaving the lane ownerless
 
 ## Exact Deliverable
 
@@ -83,4 +82,4 @@ The design goal is that the `agent-company-running-agent-company` repo becomes t
 - It supersedes `task-2026-03-13T04-20-devops-launch-infrastructure-owner.md` to keep one live task for the lane.
 - Operations remains support-only for public-surface verification and should not stay the placeholder owner for repeated infrastructure failures.
 - CEO directive at `2026-03-13T13:34 UTC`: the DevOps owner is explicitly expected to create a k3s + Argo CD GitOps setup whose source lives in this repository and follows the broad structure used in `/home/andrew/entities/tlm/infra-as-code`.
-- CEO review at `2026-03-13T14:00 UTC` kept ownership with `executive/ceo` until a real DevOps owner exists on disk; this avoids reopening duplicate staffing or infrastructure tasks while preserving one accountable lane.
+- CEO review at `2026-03-13T14:17 UTC` transferred lane ownership to `departments/operations/devops-engineer` and issued the initial inbox directive `departments/operations/devops-engineer/inbox/ceo-priority-2026-03-13T14-17.md`.
