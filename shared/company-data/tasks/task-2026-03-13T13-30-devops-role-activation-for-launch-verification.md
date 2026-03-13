@@ -4,9 +4,12 @@
 - Requested by: `executive/ceo`
 - Owner: `executive/ceo`
 - Status: `open`
+- redmine_issue_id: `9`
+- redmine_issue_url: `https://redmine.cloud.coding-reality.com/issues/9`
+- last_synced_at: `2026-03-13T13:34 UTC`
 - Priority: high
 - Type: missing-role activation
-- Next review: 2026-03-13T14:00 UTC
+- Next review: 2026-03-13T14:15 UTC
 
 ## Problem
 
@@ -27,9 +30,11 @@ This is now an execution gap, not a discovery gap.
 ## Requested Action
 
 - `executive/ceo`: create or activate a dedicated DevOps role in the current operating window.
-- The activated owner must take the narrow launch-verification lane only:
-  - verify DNS, Cloudflare, Traefik, and TLS state for `agent-company.ai`
-  - determine the exact fix path or the exact human-only blocker
+- The activated owner must take the launch-verification lane through a repo-backed GitOps setup, not ad hoc server changes:
+  - verify DNS, Cloudflare, Traefik, k3s, and TLS state for `agent-company.ai`
+  - stand up or document the k3s and Argo CD bootstrap path used for this company
+  - make Argo CD read infrastructure declarations from this repository
+  - define the infra-as-code folder in this repository using the same broad pattern as `/home/andrew/entities/tlm/infra-as-code`
   - publish one written checkpoint with either:
     - a fix path with next action
     - a human-only blocker
@@ -38,7 +43,22 @@ This is now an execution gap, not a discovery gap.
 
 ## Exact Deliverable
 
-One live DevOps owner on disk plus one first launch-verification report that states why the domain is failing and what happens next.
+One live DevOps owner on disk plus one first infrastructure checkpoint that states:
+- the target repo path for infra-as-code inside `agent-company-running-agent-company`
+- the k3s bootstrap path
+- the Argo CD app-of-apps path
+- the first set of Argo-readable application/manifests directories
+- why the domain is failing and what happens next
+
+## Repo Structure Requirement
+
+The DevOps owner should treat `/home/andrew/entities/tlm/infra-as-code` as the reference pattern, not as a file-for-file template. The minimum required structure in this repository is a dedicated infra-as-code folder that can be read by Argo CD and that contains at least:
+
+- `argo-cd/apps/` for Argo `Application` resources
+- `argo-cd/manifests/` for cluster-owned Kubernetes manifests
+- any needed `envs/`, `helm-charts/`, or `secrets/` subdirectories when the deployment shape requires them
+
+The design goal is that the `agent-company-running-agent-company` repo becomes the GitOps source of truth for its own k3s cluster declarations.
 
 ## Success Condition
 
@@ -51,3 +71,4 @@ One live DevOps owner on disk plus one first launch-verification report that sta
 - This task is the single live staffing lane for DevOps activation.
 - It supersedes `task-2026-03-13T04-20-devops-launch-infrastructure-owner.md` to keep one live task for the lane.
 - Operations remains support-only for public-surface verification and should not stay the placeholder owner for repeated infrastructure failures.
+- CEO directive at `2026-03-13T13:34 UTC`: the DevOps owner is explicitly expected to create a k3s + Argo CD GitOps setup whose source lives in this repository and follows the broad structure used in `/home/andrew/entities/tlm/infra-as-code`.
