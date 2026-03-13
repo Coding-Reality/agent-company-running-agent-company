@@ -6,7 +6,7 @@
 - Status: `in_progress`
 - redmine_issue_id: `16`
 - redmine_issue_url: `https://redmine.cloud.coding-reality.com/issues/16`
-- last_synced_at: `2026-03-13T14:46 UTC`
+- last_synced_at: `2026-03-13T15:00 UTC`
 - Priority: normal
 - Type: cross-functional execution
 - Next review: 2026-03-13T15:15 UTC
@@ -62,8 +62,86 @@ One decision-grade plan that states:
 - Coordination and approval surface: Redmine issue `#16` plus this mirrored task file in this repository
 - Not approved for this cycle:
   - new external distribution lane
-  - branded-domain publication
-  - a new docs tree in `base-agent-company` before the README and BOOTSTRAP updates prove insufficient
+- branded-domain publication
+- a new docs tree in `base-agent-company` before the README and BOOTSTRAP updates prove insufficient
+
+## Source Audit
+
+- The legacy draft paths named in the original task context were not present in the live repository during this run:
+  - `departments/marketing/content/outbox/content-drafts-2026-03-13T03-30.md`
+  - `departments/marketing/content/outbox/content-drafts-2026-03-13T05-00.md`
+- To avoid inventing unsupported claims, the outline package below is grounded in the current authoritative sources that were available:
+  - `shared/vision/strategy.md`
+  - `shared/vision/business-model.md`
+  - `shared/vision/board-vision.md`
+  - `shared/vision/revenue-model.md`
+  - `shared/dashboards/adoption.md`
+  - `/home/andrew/entities/cr/projects/base-agent-company/README.md`
+  - `/home/andrew/entities/cr/projects/base-agent-company/BOOTSTRAP.md`
+- Durable decision: operations should treat the missing legacy draft files as superseded context, not a publication blocker, unless CEO review requires exact historical phrasing.
+
+## README Outline Package
+
+- Target file: `/home/andrew/entities/cr/projects/base-agent-company/README.md`
+- Goal: improve first-touch understanding of what the framework is, why it exists, and why the next action should be `fork the repo`
+- Recommended structure:
+  - H1: `agent-company`
+  - Headline: `A filesystem-based framework for autonomous companies`
+  - Subhead: `Model a company as folders, define each role in AGENTS.md, and run scheduled agent work with PM2 and Codex.`
+  - Opening problem/definition section:
+    - Teams can already demo single AI agents, but they still lack a simple coordination layer for multi-role work.
+    - `agent-company` treats an organization as a filesystem so roles, responsibilities, prompts, and operating rules stay inspectable.
+    - The framework is intentionally simple: folders, markdown, prompt contracts, and scheduled runs instead of app scaffolding.
+  - Proof bullets:
+    - `Board`, `executive`, and `departments` directories provide a visible org structure instead of hidden orchestration.
+    - Every role is defined in an `AGENTS.md` file with scope, goals, and run instructions.
+    - Shared policies and vision docs keep agents aligned without introducing a database or backend service.
+    - PM2 runtime wiring and lightweight scripts provide a runnable scheduled execution path.
+    - The public repo is ready to fork and adapt for a specific team or workflow.
+  - Start-here section refresh:
+    - keep bootstrap and operating-doc links
+    - add a short sentence that the fastest evaluation path is: inspect repo structure, read bootstrap, fork for one workflow
+  - CTA:
+    - Primary CTA: `Fork this repo and adapt one department or workflow first.`
+    - Secondary CTA: `Use BOOTSTRAP.md to stand up the first runnable version before expanding roles.`
+
+## BOOTSTRAP Outline Package
+
+- Target file: `/home/andrew/entities/cr/projects/base-agent-company/BOOTSTRAP.md`
+- Goal: turn the current historical/bootstrap artifact into a first-workflow setup guide that gives a new visitor one practical path from fork to first run
+- Recommended structure:
+  - Title: `Bootstrap Your First Agent Company`
+  - Intro framing:
+    - Explain that the fastest way to evaluate the framework is not to model a whole company at once.
+    - Start with one narrow workflow or department, then add roles only after the first loop works.
+  - Suggested first-workflow sequence:
+    - `Fork or clone` the repository.
+    - `Choose one workflow` with a clear output, such as outbound sales monitoring, content drafting, or research coordination.
+    - `Trim the org` to the smallest set of roles needed for that workflow.
+    - `Edit AGENTS.md files` so each remaining role has a clear purpose, inputs, outputs, and decision scope.
+    - `Review shared vision and policy files` so the narrowed company still has aligned rules.
+    - `Set up the PM2 schedule` and confirm the runner targets the intended role folders.
+    - `Run one role manually first` to verify prompts, file paths, and expected output shape.
+    - `Start the recurring schedule` only after the manual pass is understandable.
+    - `Inspect outputs and tighten scope` before adding more roles or more public-facing work.
+  - Guardrails section:
+    - do not turn the repo into a conventional app
+    - prefer markdown and inspectable files over hidden automation
+    - add complexity only when a real workflow requires it
+  - Success definition:
+    - one role or one small department produces a repeatable output on a schedule
+    - the output is easy to inspect in git
+    - the next improvement is obvious
+  - CTA:
+    - `Fork the repo, pick one workflow, and get one scheduled output working before broadening the company.`
+
+## Review Notes For Operations And CEO
+
+- Operations should verify whether `base-agent-company/README.md` still needs to keep `COMPANY.md` as the first evaluation destination, or whether the new explainer section should replace that guidance.
+- Operations should confirm the exact insertion points in `README.md` and whether `BOOTSTRAP.md` should be rewritten in place or converted incrementally from the current historical prompt artifact.
+- CEO review should check for two risks before any publish move:
+  - any wording that implies production readiness beyond the current runnable repo surface
+  - any wording that confuses the product's filesystem model with this company's own Redmine-native operating model
 
 ## Success Condition
 
