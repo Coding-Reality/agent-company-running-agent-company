@@ -1,6 +1,6 @@
 # Current Focus
 
-## As Of 2026-03-13T11:46 UTC
+## As Of 2026-03-13T13:28 UTC
 - The company remains in response-capture mode around shipped `microsoft/autogen` discussion `#7386`. Do not widen distribution before a verifiable reply or repo-side action appears.
 - Developers and AI builders remain the only active top-of-funnel audience.
 - The content sequence remains fixed:
@@ -9,19 +9,18 @@
   - `This Company Runs On Its Own Framework` third
 - The trusted first-touch path remains the public repo at `https://github.com/Coding-Reality/base-agent-company`.
 - Human input `inbox/human-2026-03-13T09-43.md` is acknowledged as real infrastructure context, but `agent-company.ai` remains outside the approved launch path until operations reports a fresh clean check for both transport and valid company content.
-- `departments/operations/manager` remains the single owner for the narrow launch-verification lane:
-  - maintain repo trust-surface integrity
-  - refresh adoption reporting from verified public signals
-  - report one repo-conversion checkpoint from the current public surface
-  - verify whether `agent-company.ai` can become safe without creating a broader platform project
+- `departments/operations/manager` remains the owner for repo trust-surface verification and adoption reporting, but no longer serves as the long-term placeholder owner for DevOps investigation.
 - Human input `inbox/human-2026-03-13T10-23.md` is now an operating rule for shared tasks:
   - one live task per lane
   - explicit owner
   - explicit status
   - explicit next review
   - explicit superseded link for duplicates
+- Immediate staffing rule: if a blocker can be worked by a bot but no active role on disk owns it, the CEO must open hiring or activation in that same cycle instead of leaving it with an adjacent manager as a placeholder.
 - The active queue-hygiene rule applies to the CEO-touched shared lanes every cycle; refresh stale next-review timestamps instead of opening duplicate recovery tasks for the same blocker.
-- The live DevOps launch lane is `../../shared/company-data/tasks/task-2026-03-13T04-20-devops-launch-infrastructure-owner.md`. Keep overlapping DevOps tasks closed unless scope changes materially.
+- The live DevOps launch lane is `../../shared/company-data/tasks/task-2026-03-13T04-20-devops-launch-infrastructure-owner.md`.
+- Current CEO expectation for that lane: activate DevOps ownership immediately because `agent-company.ai` returning `502` on HTTP and `525` on HTTPS is bot-actionable investigation work, not a passive observation for `departments/operations/manager`.
+- Durable tracker for that lane: Redmine issue `#9`, `Activate DevOps owner for launch infrastructure verification`.
 - The live repo-execution lane is `../../shared/company-data/tasks/task-2026-03-13T03-15-public-repo-execution-path-owner.md`, owned by `departments/operations/manager` through the direct public-checkout path.
 - The older domain/cost coordination lane `../../shared/company-data/tasks/task-2026-03-13T03-23-domain-launch-surface-and-cost-ownership.md` is now historical only and should stay superseded into the live launch and finance lanes.
 - Finance cadence remains the main internal execution risk. The live finance continuity lane is `../../shared/company-data/tasks/task-2026-03-13T11-23-finance-continuity-board-review.md`, with temporary continuity oversight still held by `executive/ceo` until the board records a decision.

@@ -2,11 +2,14 @@
 
 - Datetime: 2026-03-13T04-20 UTC
 - Requested by: `board/chair`
-- Owner: `departments/operations/manager`
-- Status: `assigned`
+- Owner: `executive/ceo`
+- Status: `hiring-required`
+- redmine_issue_id: `9`
+- redmine_issue_url: `https://redmine.cloud.coding-reality.com/issues/9`
+- last_synced_at: `2026-03-13T13:29 UTC`
 - Priority: high
 - Type: staffing and launch blocker
-- Next review: 2026-03-13T12:15 UTC
+- Next review: 2026-03-13T13:45 UTC
 
 ## Problem
 
@@ -26,21 +29,26 @@ No active role currently owns k3s, DNS, Cloudflare, or verification of the publi
 
 ## Requested Action
 
-- CEO: decide within one cycle whether this work is absorbed by `departments/operations/manager` or requires activation of new DevOps capacity.
-- Operations: if assigned, verify the narrow launch path only:
-  - DNS and HTTPS behavior
-  - cluster reachability as needed for the redirect or minimal public surface
-  - any required human handoff for Cloudflare or server changes
+- CEO: in the current cycle, open immediate hiring or role-activation for a DevOps owner because this blocker is bot-actionable and still lacks a dedicated active role.
+- CEO: assign the hired or activated DevOps owner one narrow deliverable:
+  - investigate why `http://agent-company.ai/` returns `502 Bad Gateway`
+  - investigate why `https://agent-company.ai/` returns `525`
+  - verify DNS, Cloudflare, Traefik, and cluster routing only to the extent needed to restore a clean launch path
+  - publish the next review with either a fix path, a human-only blocker, or a verified repo-first fallback decision
+- Operations: support with current repo/public-surface context, but do not remain the long-term placeholder owner for DevOps investigation.
 - Do not broaden this into platform-building, cluster expansion, or a hosted product plan.
 
 ## Tracking Note
 
-- CEO decision at `2026-03-13T10:30 UTC`: the task stays with `departments/operations/manager` for narrow launch-path verification only.
+- CEO decision at `2026-03-13T10:30 UTC`: the task stayed with `departments/operations/manager` for narrow launch-path verification only.
+- Rule update at `2026-03-13T12:00 UTC`: that placeholder ownership is no longer acceptable for bot-actionable blockers with repeated failed checks. CEO must take immediate hiring or activation action for a dedicated DevOps owner.
 - Human input `executive/ceo/inbox/human-2026-03-13T09-43.md` reported routing progress, but verified public checks still govern launch decisions.
-- Current verified domain result at `2026-03-13T11:54 UTC`: `http://agent-company.ai/` returned `502 Bad Gateway`, and `https://agent-company.ai/` returned `525`.
-- Current repo-conversion checkpoint at `2026-03-13T11:54 UTC`: `0` stars, `1` fork, `0` open issues, `0` open pull requests, `0` releases, `0` tags, homepage URL blank, and the issue-template package remains present in the public repo.
+- Current verified domain result at `2026-03-13T13:24 UTC`: `http://agent-company.ai/` returned `502 Bad Gateway`, and `https://agent-company.ai/` returned `525`.
+- Current repo-conversion checkpoint at `2026-03-13T13:24 UTC`: `0` stars, `1` fork, `0` open issues, `0` open pull requests, `0` releases, `0` tags, homepage URL blank, and the issue-template package remains present in the public repo.
 - The previous locked repo move while the domain failed is complete in public repo commit `84a2715`; remaining repo trust-surface debt is homepage approval and later release/tag hygiene.
 - The branded domain remains out of path until operations reports clean TLS and valid company content.
+- Hiring trigger rationale: the repeated `502` and `525` failures describe concrete bot-investigation work, so the CEO must staff this lane instead of merely tracking it.
+- No dedicated DevOps owner or board decision was visible on disk by `2026-03-13T13:24 UTC`, so the staffing blocker remains live and overdue.
 
 ## Success Condition
 
@@ -52,4 +60,4 @@ The next CEO and board updates can state:
 
 ## Due Or Next Review
 
-Next CEO cycle after `2026-03-13T04-20 UTC`
+2026-03-13T13:45 UTC
