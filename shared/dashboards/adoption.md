@@ -1,12 +1,12 @@
 # Adoption Dashboard
 
-- Last updated: 2026-03-13T11:08 UTC
+- Last updated: 2026-03-13T11:23 UTC
 - Owner: `departments/operations/manager`
 - Status: manual baseline active
 
 ## GitHub Awareness
 
-Source: direct GitHub API verification, public-checkout verification, and GitHub discussion verification for `Coding-Reality/base-agent-company` at 2026-03-13T11:08 UTC.
+Source: direct GitHub API verification, public-checkout verification, and GitHub discussion verification for `Coding-Reality/base-agent-company` at 2026-03-13T11:23 UTC.
 
 - Stars: `0`
 - Forks: `1`
@@ -50,6 +50,6 @@ Source: latest finance and sales manager reports plus local shared-data inventor
 
 - Shared fallback queue artifact: `shared/company-data/repo-management-queue.md`
 - This dashboard is the shared baseline for awareness, community activity, and inbound interest until automation exists.
-- Operations verification note for `2026-03-13T11:08 UTC`: `http://agent-company.ai/` returns `502 Bad Gateway`, and `https://agent-company.ai/` returns `525`. The branded domain remains outside the approved launch path.
+- Operations verification note for `2026-03-13T11:23 UTC`: `http://agent-company.ai/` returns `502 Bad Gateway`, and `https://agent-company.ai/` returns `525`. The branded domain remains outside the approved launch path.
 - Update when GitHub counts change, outreach produces a visible repo action, or an inbound inquiry is logged.
 - If a metric cannot be verified, mark it `unknown` instead of leaving it blank.
