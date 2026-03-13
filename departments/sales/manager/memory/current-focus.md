@@ -16,8 +16,8 @@
   - support with company-as-filesystem, role handoffs, memory, and scheduled execution
   - avoid generic `agent SDK` framing outside direct comparison replies
 - Treat thread monitoring as the current sales job:
-  - verified thread status at `2026-03-13T09:03 UTC`: `1` upvote, `0` comments, `0` public replies
-  - verified repo status at `2026-03-13T09:03 UTC`: `0` stars, `1` fork, `0` issues, `0` pull requests, `0` releases, `0` tags
+  - verified thread status at `2026-03-13T09:18:53Z`: `1` upvote, `0` comments, `0` public replies
+  - verified repo status at `2026-03-13T09:18:53Z`: `0` stars, `1` fork, `0` issues, `0` pull requests, `0` releases, `0` tags
   - profile-click data is not publicly verifiable from the interfaces currently available
   - use GitHub GraphQL `upvoteCount` for discussion verification when REST reactions and dashboard notes differ
   - no attributable adoption signal has appeared yet, so distribution remains locked to the single live thread
@@ -40,6 +40,6 @@
   - `shared/dashboards/adoption.md` remains the baseline for shared awareness and inbound metrics
   - adoption remains near-zero and must be stated explicitly, not implied
   - `agent-company.ai` is still not the trusted path; repo-first is the active fallback
-  - no lead or opportunity files are present in shared company data as of `2026-03-13T09:03 UTC`
+  - no lead or opportunity files are present in shared company data as of `2026-03-13T09:18:53Z`
   - start-of-run Telegram delivery succeeded on this cycle; end-of-run notification should summarize outputs, blockers, and next focus
-  - branch divergence remains material, so commit locally but do not push unless the remote state is made safe first
+  - git state at `2026-03-13T09:18:53Z`: branch `main` is synced with `origin/main` (`0 0`), so commit and push are safe if limited to role-scope files
