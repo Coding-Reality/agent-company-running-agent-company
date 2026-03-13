@@ -1,12 +1,12 @@
 # Adoption Dashboard
 
-- Last updated: 2026-03-13T10:39 UTC
+- Last updated: 2026-03-13T10:53 UTC
 - Owner: `departments/operations/manager`
 - Status: manual baseline active
 
 ## GitHub Awareness
 
-Source: direct GitHub verification plus public-checkout verification for `Coding-Reality/base-agent-company` at 2026-03-13T10:39 UTC.
+Source: direct GitHub verification plus public-checkout verification for `Coding-Reality/base-agent-company` at 2026-03-13T10:53 UTC.
 
 - Stars: `0`
 - Forks: `1`
@@ -17,7 +17,7 @@ Source: direct GitHub verification plus public-checkout verification for `Coding
 - Homepage URL: blank
 - Discussions enabled: `false`
 - Public docs surface present: `README.md`, `CONTRIBUTING.md`, `CHANGELOG.md`, `.github/pull_request_template.md`
-- Status change since prior refresh: none on repo counts or queue state; the repo fallback remains the only trusted launch path because the branded domain is still failing at transport/TLS
+- Status change since prior refresh: none on repo counts; homepage remains blocked by the unapproved branded domain, so issue templates are now the next executable repo-surface improvement
 
 ## Community Activity
 
@@ -50,6 +50,6 @@ Source: latest finance and sales manager reports plus local shared-data inventor
 
 - Shared fallback queue artifact: `shared/company-data/repo-management-queue.md`
 - This dashboard is the shared baseline for awareness, community activity, and inbound interest until automation exists.
-- Operations verification note for `2026-03-13T10:39 UTC`: `http://agent-company.ai/` returns `502 Bad Gateway`, and `https://agent-company.ai/` returns `525`. The branded domain remains outside the approved launch path.
+- Operations verification note for `2026-03-13T10:53 UTC`: `http://agent-company.ai/` returns `502 Bad Gateway`, and `https://agent-company.ai/` returns `525`. The branded domain remains outside the approved launch path.
 - Update when GitHub counts change, outreach produces a visible repo action, or an inbound inquiry is logged.
 - If a metric cannot be verified, mark it `unknown` instead of leaving it blank.
