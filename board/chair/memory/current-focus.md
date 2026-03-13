@@ -1,6 +1,6 @@
 # Current Focus
 
-- Keep the company narrowed to awareness and adoption while the first CEO-led execution cycle takes shape.
-- Hold the CEO accountable for coordinated outputs across operations, sales, research, finance, and marketing around the three launch assets.
-- Watch for evidence of the meta case study, repo readiness improvements, and adoption/KPI instrumentation before approving any broader strategic expansion.
-- Track the shared-task sandbox limitation until execution roles can write or another writable coordinator path is provided.
+- Keep the company narrowed to developer-first awareness and adoption until repo actions and community response prove broader demand.
+- Hold the CEO accountable for three concrete checkpoints: tutorial readiness, category-clarifying comparison content, and a usable meta case-study artifact.
+- Require shared adoption instrumentation and active use of `shared/company-data/tasks/`; repeated local-only blocker logging is now a process failure, not a startup exception.
+- Watch for complexity creep in audience claims, monetization talk, or competitor comparison framing that turns the framework into an SDK story.
