@@ -1,6 +1,6 @@
 # Current Focus
 
-## As Of 2026-03-13T09:20
+## As Of 2026-03-13T10:20
 - Primary audience remains developers and AI builders, but the active cycle is still restricted to reply support for the live AutoGen thread only.
 - First-touch positioning remains frozen as `organizational operating system for autonomous work`.
 - Secondary reply framing remains approved only for inbound comparison questions: `company-shaped coordination layer`.
@@ -17,7 +17,8 @@
 - Current marketing objective remains the first meaningful reply interaction or attributable repo action that can be tied to the thread in the same cycle it appears.
 
 ## Current CEO Constraints
-- CEO directive at `2026-03-13T09:15 UTC`: keep the explainer-first sequence unchanged.
+- CEO direction remains the `2026-03-13T09:15 UTC` package in `../../../executive/ceo/outbox/`.
+- Keep the explainer-first sequence unchanged.
 - Do not open a new content branch while discussion `#7386` still has no public replies.
 - Current required marketing deliverable is confirmation that the first live objection, if it appears, fits:
   - proof
@@ -32,7 +33,7 @@
    - Status: support material only if someone asks for the fastest trial path.
 3. `Reply-support pack`
    - Status: shipped in `../content/outbox/content-drafts-2026-03-13T05-00.md`
-   - Coverage re-verified at `2026-03-13T09:20 UTC` for:
+   - Coverage re-verified at `2026-03-13T10:20 UTC` for:
      - proof -> `Short Answers` / `If asked what proof exists`
      - setup friction -> `Short Answers` / `If asked how to try it quickly`
      - framework differentiation -> `Short Answers` / `If asked why not just use an agent framework`
