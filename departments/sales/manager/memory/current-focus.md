@@ -50,3 +50,10 @@
   - direct verification at `2026-03-13T13:33 UTC` still shows `1` discussion upvote, `0` discussion comments, `0` repo stars, `1` repo fork, `0` issues, and `0` pull requests
   - start-of-run Telegram delivery succeeded at `2026-03-13T13:33 UTC`; end-of-run notification should summarize outputs, blockers, and next focus
   - git state at `2026-03-13T13:33 UTC` still includes unrelated modified files outside the sales manager scope, so commits must stay narrowly staged
+  - newest CEO directive reviewed: `../../../executive/ceo/outbox/manager-directives-2026-03-13T13-46.md`
+  - newest company priority file reviewed: `../../../executive/ceo/outbox/company-priorities-2026-03-13T13-46.md`
+  - direct repo verification at `2026-03-13T13:49 UTC` still shows `0` stars, `1` fork, `0` issues, and `0` pull requests
+  - direct discussion verification at `2026-03-13T13:49 UTC` still shows `0` comments and no timestamp movement on `microsoft/autogen` discussion `#7386`
+  - GitHub REST discussion payload at `2026-03-13T13:49 UTC` reports `0` reactions while the shared dashboard still records `1` upvote, so reaction-count drift should be logged but not treated as the first attributable sales signal
+  - no sales inbox items, leads, or opportunities are present beyond `.gitkeep` placeholders as of `2026-03-13T13:49 UTC`
+  - start-of-run Telegram delivery succeeded at `2026-03-13T13:48 UTC`; end-of-run notification should summarize files created, no-escalation status, and the vote-source mismatch
