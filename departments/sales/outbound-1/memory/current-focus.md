@@ -1,11 +1,11 @@
 # Current Focus
 
-- Datetime: 2026-03-13T13:40 UTC
+- Datetime: 2026-03-13T13:50 UTC
 - Primary focus: keep the only active public venue locked to `microsoft/autogen` discussion `#7386` and report exact zero-state unless the first attributable event appears.
 - Inputs checked: `AGENTS.md`, `../manager/outbox/outreach-priorities-2026-03-13T13-33.md`, `memory/current-focus.md`, `../../../shared/vision/business-model.md`, `../../../shared/vision/board-vision.md`, `inbox/`, `../../../shared/company-data/leads/`, `../../../shared/company-data/opportunities/`, live GitHub GraphQL discussion verification for `https://github.com/microsoft/autogen/discussions/7386`, live `gh` repo checks for `Coding-Reality/base-agent-company`.
 - Locked venue: `microsoft/autogen` GitHub Discussions -> `Show and tell`.
 - Venue state: public post remains live at `https://github.com/microsoft/autogen/discussions/7386`; monitoring mode only.
-- Verified thread state as of `2026-03-13T13:40 UTC`:
+- Verified thread state as of `2026-03-13T13:50 UTC`:
   - title: `base-agent-company: an organizational operating system for autonomous work`
   - category: `Show and tell`
   - created at `2026-03-13T04:41:27Z`
@@ -14,7 +14,7 @@
   - comments: `0`
   - upvotes: `1`
   - first public reply: none
-- Verified repo-side state as of `2026-03-13T13:40 UTC`:
+- Verified repo-side state as of `2026-03-13T13:50 UTC`:
   - stars: `0`
   - forks: `1`
   - issues: `0`
