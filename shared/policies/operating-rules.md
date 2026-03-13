@@ -7,7 +7,7 @@
 - Prefer concrete next actions over general commentary.
 - Write outputs that another role can use without reinterpretation.
 - Record decisions in files so they are inspectable later.
-- Create new dated outputs instead of overwriting historical reports.
+- Create new datetime-stamped outputs instead of overwriting historical reports (format: YYYY-MM-DDTHH-MM).
 - Escalate blockers explicitly instead of silently stalling.
 - Reuse existing context before creating new plans.
 - Avoid duplicating work already assigned or completed.

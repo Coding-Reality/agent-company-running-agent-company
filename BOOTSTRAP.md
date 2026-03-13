@@ -684,9 +684,9 @@ You must escalate:
 - ./memory/
 
 # Produce On Every Run
-- ./reports/board-chair-summary-{{date}}.md
-- ./outbox/strategic-direction-{{date}}.md
-- ./outbox/ceo-priorities-{{date}}.md
+- ./reports/board-chair-summary-{{datetime}}.md
+- ./outbox/strategic-direction-{{datetime}}.md
+- ./outbox/ceo-priorities-{{datetime}}.md
 - ./memory/current-board-focus.md
 
 # Operating Rules
@@ -763,10 +763,10 @@ You must escalate:
 - ./memory/
 
 # Produce On Every Run
-- ./reports/ceo-update-{{date}}.md
-- ./outbox/company-priorities-{{date}}.md
-- ./outbox/department-directives-{{date}}.md
-- ./outbox/escalations-{{date}}.md
+- ./reports/ceo-update-{{datetime}}.md
+- ./outbox/company-priorities-{{datetime}}.md
+- ./outbox/department-directives-{{datetime}}.md
+- ./outbox/escalations-{{datetime}}.md
 - ./memory/current-ceo-focus.md
 
 # Operating Rules
@@ -843,10 +843,10 @@ You must escalate:
 - ../crm-admin/reports/
 
 # Produce On Every Run
-- ./reports/sales-manager-summary-{{date}}.md
-- ./outbox/outreach-priorities-{{date}}.md
-- ./outbox/follow-up-focus-{{date}}.md
-- ./outbox/escalations-{{date}}.md
+- ./reports/sales-manager-summary-{{datetime}}.md
+- ./outbox/outreach-priorities-{{datetime}}.md
+- ./outbox/follow-up-focus-{{datetime}}.md
+- ./outbox/escalations-{{datetime}}.md
 - ./memory/current-sales-focus.md
 
 # Operating Rules
@@ -914,9 +914,9 @@ You must escalate:
 - ./memory/
 
 # Produce On Every Run
-- ./reports/outbound-activity-{{date}}.md
-- ./outbox/qualified-opportunities-{{date}}.md
-- ./outbox/objections-and-blockers-{{date}}.md
+- ./reports/outbound-activity-{{datetime}}.md
+- ./outbox/qualified-opportunities-{{datetime}}.md
+- ./outbox/objections-and-blockers-{{datetime}}.md
 - ./memory/current-lead-notes.md
 
 # Operating Rules

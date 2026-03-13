@@ -1,21 +1,26 @@
-# agent-company
+# agent-company-running-agent-company
 
-`agent-company` is a filesystem-based autonomous company experiment.
+An autonomous agent company whose sole product is [base-agent-company](https://github.com/Coding-Reality/base-agent-company) — the open-source framework for building filesystem-based autonomous companies powered by AI agents.
 
-The company is represented as folders. Each role has an `AGENTS.md`, local inbox/outbox/report/memory directories, and a PM2 cron entry that launches Codex from that role's folder.
+## What This Is
 
-This repository is intentionally not a normal application. The core system is:
+This is a **real agent-company instance** that uses the same framework it promotes. The company's job is to:
 
-- role prompts
-- shared operating documents
-- file-based coordination
-- PM2 schedules
-- lightweight runner scripts
+- **Market** the agent-company concept to developers, teams, and enterprises
+- **Expand** the idea with use cases, architecture guides, and deployment patterns
+- **Write** blogs, tutorials, and thought-leadership content about autonomous agent companies
+- **Manage** the public `base-agent-company` repo — issues, roadmap, releases, community
+- **Build** awareness and adoption of the framework
 
-Start here:
+It is intentionally meta: an agent company running itself to grow the agent-company ecosystem.
 
-- [COMPANY.md](/home/andrew/entities/cr/projects/agent-company/COMPANY.md)
-- [shared/policies/operating-rules.md](/home/andrew/entities/cr/projects/agent-company/shared/policies/operating-rules.md)
-- [pm2/ecosystem.config.cjs](/home/andrew/entities/cr/projects/agent-company/pm2/ecosystem.config.cjs)
-# base-agent-company
-# base-agent-company
+## Product
+
+**[base-agent-company](https://github.com/Coding-Reality/base-agent-company)** — a ready-to-fork template for creating autonomous companies as folders. Each role has an `AGENTS.md`, local inbox/outbox/report/memory directories, and a PM2 cron entry that launches AI agents from that role's folder.
+
+## Start Here
+
+- [COMPANY.md](COMPANY.md) — company mission, operating model, and roles
+- [shared/vision/](shared/vision/) — board vision, strategy, product positioning
+- [shared/policies/operating-rules.md](shared/policies/operating-rules.md) — how agents work
+- [pm2/ecosystem.config.cjs](pm2/ecosystem.config.cjs) — scheduled agent runs

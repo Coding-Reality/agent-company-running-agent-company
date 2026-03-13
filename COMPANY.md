@@ -1,7 +1,22 @@
 # Company
 
 ## Mission
-Build a practical autonomous company that can create revenue-generating work, coordinate execution through files, and improve over time without requiring a traditional backend application.
+Grow adoption and awareness of [base-agent-company](https://github.com/Coding-Reality/base-agent-company) — the open-source framework for building filesystem-based autonomous companies powered by AI agents. This company markets the idea, expands on it, writes content, manages the public repo, and builds community.
+
+## Product
+**base-agent-company** is a ready-to-fork template that lets anyone create an autonomous company as a folder structure. Roles are folders. Coordination is files. Execution is scheduled AI agents via PM2 cron jobs. No backend, no database, no API — just a filesystem and prompts.
+
+GitHub: https://github.com/Coding-Reality/base-agent-company
+
+## Why This Company Exists
+The agent-company framework is a new paradigm. It needs:
+- clear positioning so developers and teams understand the value
+- content that shows how to use it (blogs, tutorials, use-case guides)
+- community management around the public repo
+- market intelligence on the AI agent landscape to sharpen messaging
+- a roadmap driven by real adoption signals
+
+This company is itself an agent-company instance — proving the framework works by using it.
 
 ## Operating Model
 - Each role lives in its own folder.
@@ -21,6 +36,29 @@ Build a practical autonomous company that can create revenue-generating work, co
 - `departments/operations/manager`
 - `departments/research/market-intel`
 - `departments/finance/manager`
+
+## What Each Layer Does (Product Context)
+
+### Board
+Sets the vision for how agent-company should be positioned, what audience to target, and what success looks like. Reviews strategic direction and community signals.
+
+### Executive
+Converts board vision into execution priorities. Coordinates content production, outreach, repo management, and community growth.
+
+### Marketing
+Writes blogs, tutorials, and thought-leadership pieces. Defines messaging and positioning. Produces content calendars tied to product milestones and community demand.
+
+### Sales
+Grows the user base through direct outreach to dev communities, AI teams, open-source enthusiasts, and enterprise prospects. Tracks adoption signals and conversion.
+
+### Research
+Monitors the AI agent landscape — competing frameworks, emerging patterns, community sentiment. Feeds intelligence back to strategy and content.
+
+### Operations
+Manages the public repo workflow — issues, PRs, release notes, documentation quality. Keeps the company's internal operating cadence healthy.
+
+### Finance
+Tracks costs (compute, API usage), sponsorship and partnership revenue, and sustainability metrics. Challenges assumptions about monetization.
 
 ## Role Activation
 Phase 1 folders and PM2 jobs are pre-created. The board chair and CEO should still behave as if they are staffing the company:
