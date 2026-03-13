@@ -1,13 +1,13 @@
 # Repo Management Queue
 
-- Last updated: 2026-03-13T10:53 UTC
+- Last updated: 2026-03-13T11:08 UTC
 - Owner: `departments/operations/manager`
 - Repo: `Coding-Reality/base-agent-company`
 - Purpose: fallback queue artifact for repo activity and docs debt while the live GitHub queue is empty
 
 ## Live Snapshot
 
-Source: direct GitHub verification plus public-checkout inspection at 2026-03-13T10:53 UTC.
+Source: direct GitHub API verification plus public-checkout inspection at 2026-03-13T11:08 UTC.
 
 - Stars: `0`
 - Forks: `1`
@@ -35,6 +35,8 @@ Source: direct GitHub verification plus public-checkout inspection at 2026-03-13
 4. `.github/` issue hygiene
    - Status: next executable
    - Why: pull request template exists, issue templates are still absent, and this is the next visible repo-conversion improvement that does not depend on the branded domain
+   - Locked package: `.github/ISSUE_TEMPLATE/bug-report.md`, `.github/ISSUE_TEMPLATE/docs-question.md`, `.github/ISSUE_TEMPLATE/process-improvement.md`, and `.github/ISSUE_TEMPLATE/config.yml`
+   - Rationale: `CONTRIBUTING.md` already asks contributors to report current behavior, expected behavior, affected files, and process improvements, so this package matches the existing public contribution guidance without widening scope
 
 ## Community Queue
 
