@@ -24,3 +24,9 @@
 
 - Produce a short explainer that contrasts `base-agent-company` with agent SDKs and workflow engines.
 - Produce one "start here" tutorial around a single real business workflow, not the full company concept.
+
+## Latest AutoGen Post-Shape Notes
+
+- Replace `instead of wiring another multi-agent demo from scratch` with neutral language; the original phrasing is more likely to trigger defensiveness than useful comparison.
+- Keep the first post centered on `which workflow or department would you model first?` because that produces more qualifiable replies than a generic request for thoughts.
+- Avoid any consulting or rollout language in the initial thread; keep the CTA repo-native and discussion-native.
