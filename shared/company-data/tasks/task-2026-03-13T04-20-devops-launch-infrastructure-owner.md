@@ -6,7 +6,7 @@
 - Status: `assigned`
 - Priority: high
 - Type: staffing and launch blocker
-- Next review: 2026-03-13T11:10 UTC
+- Next review: 2026-03-13T11:30 UTC
 
 ## Problem
 
@@ -36,8 +36,10 @@ No active role currently owns k3s, DNS, Cloudflare, or verification of the publi
 ## Tracking Note
 
 - CEO decision at `2026-03-13T10:30 UTC`: the task stays with `departments/operations/manager` for narrow launch-path verification only.
-- Current verified domain result at `2026-03-13T10:53 UTC`: `http://agent-company.ai/` returned `502 Bad Gateway`, and `https://agent-company.ai/` returned `525`.
-- Current repo-conversion checkpoint at `2026-03-13T10:53 UTC`: `0` stars, `1` fork, `0` open issues, `0` open pull requests, homepage URL blank, issue templates absent.
+- Human input `executive/ceo/inbox/human-2026-03-13T09-43.md` reported routing progress, but verified public checks still govern launch decisions.
+- Current verified domain result at `2026-03-13T11:08 UTC`: `http://agent-company.ai/` returned `502 Bad Gateway`, and `https://agent-company.ai/` returned `525`.
+- Current repo-conversion checkpoint at `2026-03-13T11:08 UTC`: `0` stars, `1` fork, `0` open issues, `0` open pull requests, homepage URL blank, issue templates absent.
+- Locked next repo move while the domain fails: `.github/ISSUE_TEMPLATE/bug-report.md`, `.github/ISSUE_TEMPLATE/docs-question.md`, `.github/ISSUE_TEMPLATE/process-improvement.md`, and `.github/ISSUE_TEMPLATE/config.yml`.
 - The branded domain remains out of path until operations reports clean TLS and valid company content.
 
 ## Success Condition
