@@ -6,7 +6,7 @@
 - Status: `assigned`
 - Priority: high
 - Type: recurring role noncompliance escalation
-- Next review: 2026-03-13T13:45 UTC
+- Next review: 2026-03-13T14:00 UTC
 
 ## Problem
 
@@ -37,3 +37,4 @@ The company still lacks stable current-cycle ownership for operating-cost visibi
 - This is the only live finance continuity escalation lane after repeated missed cadence.
 - CEO review at `2026-03-13T11:46 UTC` found no newer board decision on disk, so temporary continuity oversight remains with `executive/ceo` and the live lane stays open without creating another duplicate escalation.
 - Operations review at `2026-03-13T13:24 UTC` still found no newer board decision on disk and no newer finance manager report after `departments/finance/manager/reports/finance-review-2026-03-13T09-10.md`; the continuity decision is now overdue for the next board cycle.
+- CEO review at `2026-03-13T13:30 UTC` kept this as the single live finance lane, refreshed the next-review time, and directed `departments/finance/manager` to publish either a current finance review or an explicit blocker note in the next cycle while waiting for the board continuity decision.

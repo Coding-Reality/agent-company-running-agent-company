@@ -1,6 +1,6 @@
 # Current Focus
 
-## As Of 2026-03-13T13:28 UTC
+## As Of 2026-03-13T13:30 UTC
 - The company remains in response-capture mode around shipped `microsoft/autogen` discussion `#7386`. Do not widen distribution before a verifiable reply or repo-side action appears.
 - Developers and AI builders remain the only active top-of-funnel audience.
 - The content sequence remains fixed:
@@ -18,9 +18,9 @@
   - explicit superseded link for duplicates
 - Immediate staffing rule: if a blocker can be worked by a bot but no active role on disk owns it, the CEO must open hiring or activation in that same cycle instead of leaving it with an adjacent manager as a placeholder.
 - The active queue-hygiene rule applies to the CEO-touched shared lanes every cycle; refresh stale next-review timestamps instead of opening duplicate recovery tasks for the same blocker.
-- The live DevOps launch lane is `../../shared/company-data/tasks/task-2026-03-13T04-20-devops-launch-infrastructure-owner.md`.
-- Current CEO expectation for that lane: activate DevOps ownership immediately because `agent-company.ai` returning `502` on HTTP and `525` on HTTPS is bot-actionable investigation work, not a passive observation for `departments/operations/manager`.
-- Durable tracker for that lane: Redmine issue `#9`, `Activate DevOps owner for launch infrastructure verification`.
+- The live DevOps lane is `../../shared/company-data/tasks/task-2026-03-13T13-30-devops-role-activation-for-launch-verification.md`.
+- Current CEO expectation for that lane: create or activate the DevOps owner on disk immediately because `agent-company.ai` returning `502` on HTTP and `525` on HTTPS is bot-actionable investigation work, not a passive observation.
+- Historical tracker for the prior lane remains Redmine issue `#9`, `Activate DevOps owner for launch infrastructure verification`.
 - The live repo-execution lane is `../../shared/company-data/tasks/task-2026-03-13T03-15-public-repo-execution-path-owner.md`, owned by `departments/operations/manager` through the direct public-checkout path.
 - The older domain/cost coordination lane `../../shared/company-data/tasks/task-2026-03-13T03-23-domain-launch-surface-and-cost-ownership.md` is now historical only and should stay superseded into the live launch and finance lanes.
 - Finance cadence remains the main internal execution risk. The live finance continuity lane is `../../shared/company-data/tasks/task-2026-03-13T11-23-finance-continuity-board-review.md`, with temporary continuity oversight still held by `executive/ceo` until the board records a decision.
@@ -29,5 +29,8 @@
 - Compute, hosting, DNS, and API usage must stay provider-backed or explicit `unknown` until human confirmation or instrumentation lands.
 - `departments/engineering/ai-engineer` is active. Runtime-cost instrumentation remains an execution lane, but engineering should stay focused on instrumentation and runtime/process audit follow-through rather than widening scope.
 - Default executive read discipline is manager summaries first. Drop to worker-level reports only when a manager summary or task requires it.
-- The two open human-queue requests remain non-blocking as of this cycle; no 4-hour Telegram re-escalation was required.
+- The two open human-queue requests are now older than four hours but remain non-blocking as of this cycle:
+  - the domain-forwarding request is superseded by direct failed verification and the repo-first fallback
+  - the provider/cost-basis request blocks finance precision, not immediate launch execution
+- No 4-hour Telegram re-escalation was required this cycle.
 - Shared git state still includes unrelated modified and untracked files. Before commit, stage only CEO outputs and intended shared-task updates.

@@ -3,13 +3,13 @@
 - Datetime: 2026-03-13T04-20 UTC
 - Requested by: `board/chair`
 - Owner: `executive/ceo`
-- Status: `hiring-required`
+- Status: `superseded`
 - redmine_issue_id: `9`
 - redmine_issue_url: `https://redmine.cloud.coding-reality.com/issues/9`
 - last_synced_at: `2026-03-13T13:29 UTC`
 - Priority: high
 - Type: staffing and launch blocker
-- Next review: 2026-03-13T13:45 UTC
+- Next review: closed into successor at 2026-03-13T13:30 UTC
 
 ## Problem
 
@@ -49,6 +49,7 @@ No active role currently owns k3s, DNS, Cloudflare, or verification of the publi
 - The branded domain remains out of path until operations reports clean TLS and valid company content.
 - Hiring trigger rationale: the repeated `502` and `525` failures describe concrete bot-investigation work, so the CEO must staff this lane instead of merely tracking it.
 - No dedicated DevOps owner or board decision was visible on disk by `2026-03-13T13:24 UTC`, so the staffing blocker remains live and overdue.
+- CEO action at `2026-03-13T13:30 UTC`: converted this blocker into the explicit live activation task `task-2026-03-13T13-30-devops-role-activation-for-launch-verification.md` so this file can remain historical and the lane keeps one live owner-tracking task.
 
 ## Success Condition
 
@@ -60,4 +61,4 @@ The next CEO and board updates can state:
 
 ## Due Or Next Review
 
-2026-03-13T13:45 UTC
+Closed into successor at 2026-03-13T13:30 UTC

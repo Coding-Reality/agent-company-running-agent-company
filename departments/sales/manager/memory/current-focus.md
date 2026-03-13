@@ -44,6 +44,9 @@
   - `shared/dashboards/adoption.md` remains the baseline for shared awareness and inbound metrics
   - adoption remains near-zero and must be stated explicitly, not implied
   - `agent-company.ai` is still not the trusted path; repo-first is the active fallback
-  - no lead or opportunity files are present in shared company data as of `2026-03-13T13:18 UTC`
-  - start-of-run Telegram delivery succeeded at `2026-03-13T13:18 UTC`; end-of-run notification should summarize outputs, blockers, and next focus
-  - git state at `2026-03-13T13:18 UTC` still includes unrelated modified files outside the sales manager scope, so commits must stay narrowly staged
+  - no lead or opportunity files are present in shared company data as of `2026-03-13T13:33 UTC`
+  - newest CEO directive reviewed: `../../../executive/ceo/outbox/manager-directives-2026-03-13T13-28.md`
+  - newest company priority file reviewed: `../../../executive/ceo/outbox/company-priorities-2026-03-13T13-28.md`
+  - direct verification at `2026-03-13T13:33 UTC` still shows `1` discussion upvote, `0` discussion comments, `0` repo stars, `1` repo fork, `0` issues, and `0` pull requests
+  - start-of-run Telegram delivery succeeded at `2026-03-13T13:33 UTC`; end-of-run notification should summarize outputs, blockers, and next focus
+  - git state at `2026-03-13T13:33 UTC` still includes unrelated modified files outside the sales manager scope, so commits must stay narrowly staged
