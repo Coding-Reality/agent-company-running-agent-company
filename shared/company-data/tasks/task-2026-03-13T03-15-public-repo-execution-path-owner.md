@@ -6,7 +6,7 @@
 - Status: `assigned`
 - Priority: high
 - Type: cross-functional blocker
-- Next review: 2026-03-13T11:45 UTC
+- Next review: 2026-03-13T12:00 UTC
 
 ## Problem
 
@@ -32,6 +32,6 @@ The company has one explicit owner and one explicit path for turning the repo-ma
 ## Tracking Note
 
 - Owner is now explicit: `departments/operations/manager`.
-- Current approved execution path is the direct public checkout at `/home/andrew/entities/cr/projects/base-agent-company`, as recorded in `departments/operations/manager/reports/operations-review-2026-03-13T11-23.md`.
-- The locked next repo-conversion move remains the issue-template package while the branded domain is still failing.
-- Keep this lane live until operations reports either the next repo change completed or an explicit blocked reason tied to the public checkout path.
+- Current approved execution path is the direct public checkout at `/home/andrew/entities/cr/projects/base-agent-company`, now used to ship the issue-template package in commit `84a2715` pushed at `2026-03-13T11:40 UTC`.
+- The previous locked next repo-conversion move is complete: `.github/ISSUE_TEMPLATE/bug-report.md`, `docs-question.md`, `process-improvement.md`, and `config.yml` are now present in the public repo.
+- Keep this lane live until operations reports either the next repo change completed or an explicit blocked reason tied to homepage approval, release hygiene, or first contributor flow.

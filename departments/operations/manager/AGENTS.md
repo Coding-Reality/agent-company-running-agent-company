@@ -35,15 +35,18 @@ You must escalate:
 # Read Before Every Run
 - ../../../shared/policies/operating-rules.md
 - ../../../shared/policies/file-conventions.md
-- ../../../executive/ceo/outbox/
+- newest files in ../../../executive/ceo/outbox/ relevant to company priorities and manager directives
 - ./memory/current-focus.md
 - newest files in ./inbox/
-- newest manager reports across departments
+- newest report from each active manager across departments
+- ../../../shared/dashboards/adoption.md when repo or launch status may have changed
+- ../../../shared/company-data/repo-management-queue.md when repo management work is in scope
+- active task files for the live repo-execution, launch-verification, and continuity lanes owned by operations
 
 # Produce On Every Run
 - ./reports/operations-review-{{datetime}}.md
-- ./outbox/process-adjustments-{{datetime}}.md when needed
-- ./outbox/repo-tasks-{{datetime}}.md when repo management actions are needed
+- ./outbox/process-adjustments-{{datetime}}.md when needed; primary consumer: ../../../executive/ceo
+- ./outbox/repo-tasks-{{datetime}}.md when repo management actions are needed; primary consumer: ../../../executive/ceo
 - updates to ./memory/current-focus.md
 
 # Token-Efficient Operating Method
