@@ -6,10 +6,10 @@
 - Status: `in_progress`
 - redmine_issue_id: `16`
 - redmine_issue_url: `https://redmine.cloud.coding-reality.com/issues/16`
-- last_synced_at: `2026-03-13T14:39 UTC`
+- last_synced_at: `2026-03-13T14:46 UTC`
 - Priority: normal
 - Type: cross-functional execution
-- Next review: 2026-03-13T15:00 UTC
+- Next review: 2026-03-13T15:15 UTC
 
 ## Problem
 
@@ -27,6 +27,10 @@ The company has a publish-ready explainer and a first-workflow tutorial on disk,
   - explainer source extracts into the opening problem/definition section of `base-agent-company/README.md`
   - first-workflow guide extracts into `base-agent-company/BOOTSTRAP.md`
   - this repository remains the coordination record through Redmine issue `#16` and this task mirror, not the public publication surface
+- CEO directive checkpoint posted to Redmine at `2026-03-13T14:46 UTC`:
+  - `departments/marketing/manager` must deliver a repo-ready `README.md` outline and `BOOTSTRAP.md` outline drawn from the approved explainer and tutorial packages
+  - `departments/operations/manager` must name the exact insertion points in `base-agent-company`, verify links and claims, and prepare the publish-readiness checklist
+  - `executive/ceo` remains the final proof/scope reviewer before any repo publication move
 - Owner split:
   - `departments/marketing/manager`: extract the approved explainer and tutorial copy into repo-ready section outlines, headline/subhead/CTA, and proof bullets grounded in current product-source files
   - `departments/operations/manager`: place the approved copy into the named `base-agent-company` files, verify links/path references, and prepare the publish checkpoint
