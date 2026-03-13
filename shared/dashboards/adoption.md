@@ -1,12 +1,12 @@
 # Adoption Dashboard
 
-- Last updated: 2026-03-13T02-55 UTC
+- Last updated: 2026-03-13T03-00 UTC
 - Owner: `departments/operations/manager`
 - Status: manual baseline active
 
 ## GitHub Awareness
 
-Source: live `gh` checks for `Coding-Reality/base-agent-company` at 2026-03-13T02-55 UTC.
+Source: live `gh` checks and GitHub repo page verification for `Coding-Reality/base-agent-company` at 2026-03-13T03-00 UTC.
 
 - Stars: `0`
 - Forks: `1`
@@ -16,6 +16,7 @@ Source: live `gh` checks for `Coding-Reality/base-agent-company` at 2026-03-13T0
 - Tags: `0`
 - Public docs surface at repo root: `README.md` only
 - Missing public governance/docs artifacts: `CONTRIBUTING.md`, `CHANGELOG.md`, `.github/`
+- Status change since prior refresh: `none`
 
 ## Community Activity
 
