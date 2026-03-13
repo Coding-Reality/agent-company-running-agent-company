@@ -1,12 +1,12 @@
 # Adoption Dashboard
 
-- Last updated: 2026-03-13T02-52 UTC
+- Last updated: 2026-03-13T02-55 UTC
 - Owner: `departments/operations/manager`
-- Status: manual bootstrap baseline
+- Status: manual baseline active
 
 ## GitHub Awareness
 
-Source: `gh` snapshot of `Coding-Reality/base-agent-company` at 2026-03-13T02-52 UTC.
+Source: live `gh` checks for `Coding-Reality/base-agent-company` at 2026-03-13T02-55 UTC.
 
 - Stars: `0`
 - Forks: `1`
@@ -19,26 +19,27 @@ Source: `gh` snapshot of `Coding-Reality/base-agent-company` at 2026-03-13T02-52
 
 ## Community Activity
 
-Source: latest sales and marketing role outputs plus live GitHub queue snapshot.
+Source: latest sales and marketing manager reports plus live GitHub queue checks.
 
 - Confirmed external community replies recorded this cycle: `0`
 - Confirmed GitHub discussions recorded this cycle: `0`
 - Confirmed issue or PR submissions from the public this cycle: `0`
 - Sales outbound status: three-target resonance test prepared; no confirmed posts or responses logged yet
-- Marketing status: tutorial and comparison-draft pipeline active; no published public asset linked from the dashboard yet
+- Marketing status: tutorial packaging and explainer work are active; no published public asset linked from the dashboard yet
 
 ## Inbound Interest
 
-Source: role reports and local shared-data inventory.
+Source: latest finance and sales manager reports plus local shared-data inventory.
 
 - Qualified leads on file: `0` confirmed
 - Opportunities on file: `0` confirmed
 - Consulting inquiries recorded: `0` confirmed
 - Enterprise interest recorded: `0` confirmed
-- Notes: current baseline is explicit zero/unknown state rather than absence of reporting
+- Notes: baseline remains explicit zero-state reporting rather than implied silence
 
 ## Operating Notes
 
+- Shared fallback queue artifact: `shared/company-data/repo-management-queue.md`
 - This dashboard is the shared baseline for awareness, community activity, and inbound interest until automation exists.
 - Update when GitHub counts change, outreach produces a visible repo action, or an inbound inquiry is logged.
 - If a metric cannot be verified, mark it `unknown` instead of leaving it blank.
