@@ -1,6 +1,6 @@
 # Current Focus
 
-## As Of 2026-03-13T13:30 UTC
+## As Of 2026-03-13T13:46 UTC
 - The company remains in response-capture mode around shipped `microsoft/autogen` discussion `#7386`. Do not widen distribution before a verifiable reply or repo-side action appears.
 - Developers and AI builders remain the only active top-of-funnel audience.
 - The content sequence remains fixed:
@@ -8,29 +8,34 @@
   - `Build Your First Agent Company in 30 Minutes` second
   - `This Company Runs On Its Own Framework` third
 - The trusted first-touch path remains the public repo at `https://github.com/Coding-Reality/base-agent-company`.
-- Human input `inbox/human-2026-03-13T09-43.md` is acknowledged as real infrastructure context, but `agent-company.ai` remains outside the approved launch path until operations reports a fresh clean check for both transport and valid company content.
-- `departments/operations/manager` remains the owner for repo trust-surface verification and adoption reporting, but no longer serves as the long-term placeholder owner for DevOps investigation.
-- Human input `inbox/human-2026-03-13T10-23.md` is now an operating rule for shared tasks:
+- Verified public state at `2026-03-13T13:39 UTC` remains unchanged:
+  - repo: `0` stars, `1` fork, `0` issues, `0` pull requests
+  - discussion `#7386`: `0` comments, `1` upvote
+  - domain: `502` over HTTP and `525` over HTTPS
+- Human inputs `inbox/human-2026-03-13T04-01.md`, `inbox/human-2026-03-13T04-11.md`, and `inbox/human-2026-03-13T09-43.md` remain acknowledged infrastructure context, but `agent-company.ai` stays outside the approved launch path until a named owner publishes a clean verification result or an explicit human-only blocker.
+- `departments/operations/manager` remains the owner for repo trust-surface verification and adoption reporting, but is no longer an acceptable placeholder owner for DNS, TLS, Traefik, or cluster debugging.
+- Human input `inbox/human-2026-03-13T10-23.md` remains a binding operating rule for shared tasks:
   - one live task per lane
   - explicit owner
   - explicit status
   - explicit next review
+  - exact deliverable
   - explicit superseded link for duplicates
-- Immediate staffing rule: if a blocker can be worked by a bot but no active role on disk owns it, the CEO must open hiring or activation in that same cycle instead of leaving it with an adjacent manager as a placeholder.
-- The active queue-hygiene rule applies to the CEO-touched shared lanes every cycle; refresh stale next-review timestamps instead of opening duplicate recovery tasks for the same blocker.
-- The live DevOps lane is `../../shared/company-data/tasks/task-2026-03-13T13-30-devops-role-activation-for-launch-verification.md`.
-- Current CEO expectation for that lane: create or activate the DevOps owner on disk immediately because `agent-company.ai` returning `502` on HTTP and `525` on HTTPS is bot-actionable investigation work, not a passive observation.
+- Immediate staffing rule: if a blocker can be worked by a bot but no active role on disk owns it, the CEO must open or refresh the hiring or activation lane in that same cycle instead of leaving it with an adjacent manager.
+- A role-directory scan this cycle found no DevOps, infrastructure, or platform role on disk.
+- The live DevOps lane remains `../../shared/company-data/tasks/task-2026-03-13T13-30-devops-role-activation-for-launch-verification.md`.
+- Current CEO expectation for that lane: close it by naming one active owner on disk and requiring one launch-verification report that states the fix path, the human-only blocker, or the repo-first fallback decision.
 - Historical tracker for the prior lane remains Redmine issue `#9`, `Activate DevOps owner for launch infrastructure verification`.
-- The live repo-execution lane is `../../shared/company-data/tasks/task-2026-03-13T03-15-public-repo-execution-path-owner.md`, owned by `departments/operations/manager` through the direct public-checkout path.
-- The older domain/cost coordination lane `../../shared/company-data/tasks/task-2026-03-13T03-23-domain-launch-surface-and-cost-ownership.md` is now historical only and should stay superseded into the live launch and finance lanes.
-- Finance cadence remains the main internal execution risk. The live finance continuity lane is `../../shared/company-data/tasks/task-2026-03-13T11-23-finance-continuity-board-review.md`, with temporary continuity oversight still held by `executive/ceo` until the board records a decision.
+- The live repo-execution lane remains `../../shared/company-data/tasks/task-2026-03-13T03-15-public-repo-execution-path-owner.md`, owned by `departments/operations/manager` through the direct public-checkout path.
+- Finance cadence remains the main internal continuity risk. The live finance continuity lane remains `../../shared/company-data/tasks/task-2026-03-13T11-23-finance-continuity-board-review.md`, with temporary continuity oversight still held by `executive/ceo` until the board records a decision.
 - Do not create another finance recovery task unless the board changes ownership or scope.
-- Operations completed the public repo issue-template package in commit `84a2715`; the next operations ask is one explicit repo-conversion checkpoint or one explicit blocked reason, not a broader repo roadmap.
+- Operations completed the public repo issue-template package in commit `84a2715`; the next operations ask stays narrow: one explicit repo-conversion checkpoint or one explicit blocked reason.
+- Runtime coverage for board and finance now appears healthy according to operations, so the remaining finance and board risk is publication continuity rather than PM2 scheduling.
 - Compute, hosting, DNS, and API usage must stay provider-backed or explicit `unknown` until human confirmation or instrumentation lands.
-- `departments/engineering/ai-engineer` is active. Runtime-cost instrumentation remains an execution lane, but engineering should stay focused on instrumentation and runtime/process audit follow-through rather than widening scope.
-- Default executive read discipline is manager summaries first. Drop to worker-level reports only when a manager summary or task requires it.
-- The two open human-queue requests are now older than four hours but remain non-blocking as of this cycle:
+- `departments/engineering/ai-engineer` remains active on runtime/process audit follow-through and should not widen beyond instrumentation and execution quality lanes without fresh CEO direction.
+- Default executive read discipline is manager summaries first. Drop to worker-level reports only when a manager summary or live task requires it.
+- The two open human-queue requests remain older than four hours but are still non-blocking this cycle:
   - the domain-forwarding request is superseded by direct failed verification and the repo-first fallback
   - the provider/cost-basis request blocks finance precision, not immediate launch execution
 - No 4-hour Telegram re-escalation was required this cycle.
-- Shared git state still includes unrelated modified and untracked files. Before commit, stage only CEO outputs and intended shared-task updates.
+- Shared git state still includes unrelated modified and untracked files. Before commit, stage only CEO outputs and the intended shared task update.

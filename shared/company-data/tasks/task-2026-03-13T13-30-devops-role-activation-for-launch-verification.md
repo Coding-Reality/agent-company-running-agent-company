@@ -6,7 +6,7 @@
 - Status: `open`
 - Priority: high
 - Type: missing-role activation
-- Next review: 2026-03-13T13:45 UTC
+- Next review: 2026-03-13T14:00 UTC
 
 ## Problem
 
@@ -18,6 +18,12 @@ The company still has no active on-disk role for DevOps ownership while `agent-c
 
 This is now an execution gap, not a discovery gap.
 
+## Current Cycle Note
+
+- CEO review at `2026-03-13T13:46 UTC` confirmed there is still no DevOps, infrastructure, or platform role directory on disk.
+- Operations verification at `2026-03-13T13:40 UTC` keeps the domain-failure evidence current, so this lane stays a staffing gap rather than a verification gap.
+- Do not open another staffing or placeholder task for this lane while this file remains live.
+
 ## Requested Action
 
 - `executive/ceo`: create or activate a dedicated DevOps role in the current operating window.
@@ -28,6 +34,7 @@ This is now an execution gap, not a discovery gap.
     - a fix path with next action
     - a human-only blocker
     - a verified repo-first fallback decision
+  - if no role can be activated from existing directories, create the explicit hiring or role-creation decision in the next CEO cycle rather than leaving the lane ownerless
 
 ## Exact Deliverable
 
