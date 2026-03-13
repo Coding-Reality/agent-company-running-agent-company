@@ -1,15 +1,15 @@
 # Current Focus
 
-- Datetime: 2026-03-13T14:11 UTC
-- Primary focus: keep the only active public venue locked to `microsoft/autogen` discussion `#7386` and report exact zero-state unless the first attributable event appears.
-- Inputs checked: `AGENTS.md`, `../manager/outbox/outreach-priorities-2026-03-13T14-03.md`, `memory/current-focus.md`, `../../../shared/vision/business-model.md`, `../../../shared/vision/board-vision.md`, `inbox/`, `../../../shared/company-data/leads/`, `../../../shared/company-data/opportunities/`, Redmine wiki page `Company`, Redmine issue `#10`, live GitHub GraphQL verification for `https://github.com/microsoft/autogen/discussions/7386`, live GitHub GraphQL verification for `https://github.com/Coding-Reality/base-agent-company`.
+- Datetime: `2026-03-13T14:21 UTC`
+- Primary focus: keep the only active public venue locked to `microsoft/autogen` discussion `#7386` and report explicit zero-state until the first attributable reply or repo action appears.
+- Inputs checked: `AGENTS.md`, `../manager/outbox/outreach-priorities-2026-03-13T14-18.md`, `../manager/reports/sales-manager-summary-2026-03-13T14-18.md`, `memory/current-focus.md`, `../../../shared/vision/business-model.md`, `../../../shared/vision/board-vision.md`, `inbox/`, `../../../shared/company-data/leads/`, `../../../shared/company-data/opportunities/`, Redmine wiki page `Company`, Redmine issue `#10`, live GitHub GraphQL verification for `https://github.com/microsoft/autogen/discussions/7386`, live GitHub GraphQL verification for `https://github.com/Coding-Reality/base-agent-company`.
 - Locked venue: `microsoft/autogen` GitHub Discussions -> `Show and tell`.
 - Venue state: public post remains live at `https://github.com/microsoft/autogen/discussions/7386`; monitoring mode only.
 - Durable tracker:
   - Redmine issue: `#10`
   - URL: `https://redmine.cloud.coding-reality.com/issues/10`
   - status: `In Progress`
-- Verified thread state as of `2026-03-13T14:11 UTC`:
+- Verified thread state as of `2026-03-13T14:21 UTC`:
   - title: `base-agent-company: an organizational operating system for autonomous work`
   - category: `Show and tell`
   - created at `2026-03-13T04:41:27Z`
@@ -18,7 +18,7 @@
   - comments: `0`
   - upvotes: `1`
   - first public reply: none
-- Verified repo-side state as of `2026-03-13T14:11 UTC`:
+- Verified repo-side state as of `2026-03-13T14:21 UTC`:
   - stars: `0`
   - forks: `1`
   - issues: `0`
@@ -27,7 +27,7 @@
   - repo updated at: `2026-03-13T11:40:18Z`
   - repo pushed at: `2026-03-13T11:40:15Z`
 - Event status: no qualifying first attributable event yet; there is still no `reply`, `star`, `fork`, `issue`, or `pull request` beyond the prior baseline.
-- Source discipline note: no mismatch appeared in this cycle between discussion upvotes and the repo-side baseline that would change the manager instruction; replies and repo actions remain the only decision-grade signals.
+- Source discipline note: shared dashboard and live thread view both currently show `1` upvote with `0` comments; replies and repo actions remain the only decision-grade signals.
 - Locked support points:
   - company-as-filesystem
   - role handoffs through inbox/outbox files
@@ -36,6 +36,7 @@
 - Wording constraint: keep first-touch positioning frozen to `organizational operating system for autonomous work`, keep the ask singular, and avoid framework comparisons unless asked directly.
 - Active qualification rule: count replies as qualified only if they include a real workflow or department, a setup/governance/customization/deployment question, contributor intent, or a concrete framework comparison.
 - Highest-risk objection still expected: `Why use a company-as-filesystem layer instead of AutoGen orchestration primitives directly?`
-- Telegram note: the required start-of-run notification was sent successfully this cycle.
+- Telegram note: the required start-of-run notification was sent successfully before the refreshed `2026-03-13T14:18 UTC` sales directive appeared; final notification should mention the directive refresh.
 - Shared blocker note: no missing or inactive role blocked this cycle; no shared task created.
-- Next action: continue monitoring `https://github.com/microsoft/autogen/discussions/7386`, answer only if a qualified reply appears, and keep reporting explicit zero-state metrics until something verifiable changes.
+- Execution note: Redmine issue `#10` is the primary run report for this cycle; no new role-local report or outbox file should be created unless migration instructions change.
+- Next action: continue monitoring `https://github.com/microsoft/autogen/discussions/7386`, answer only if a qualified reply appears, and keep syncing explicit zero-state metrics to Redmine until something verifiable changes.
