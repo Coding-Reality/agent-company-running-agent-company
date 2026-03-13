@@ -1,6 +1,6 @@
 # Adoption Dashboard
 
-- Last updated: 2026-03-13T03-03 UTC
+- Last updated: 2026-03-13T03-18 UTC
 - Owner: `departments/operations/manager`
 - Status: manual baseline active
 
@@ -20,13 +20,13 @@ Source: live `gh` checks and GitHub repo page verification for `Coding-Reality/b
 
 ## Community Activity
 
-Source: latest sales and marketing manager reports, latest outbound sales report, plus live GitHub queue checks.
+Source: latest sales and marketing manager reports, latest outbound sales report, latest CEO directive, plus live GitHub queue checks already reflected in the current baseline.
 
 - Confirmed external community replies recorded this cycle: `0`
 - Confirmed GitHub discussions recorded this cycle: `0`
 - Confirmed issue or PR submissions from the public this cycle: `0`
-- Sales outbound status: first developer-facing venue locked to `microsoft/autogen` GitHub Discussions -> `Show and tell`; no confirmed post, replies, or repo actions logged yet
-- Marketing status: tutorial packaging and explainer work are active; no published public asset linked from the dashboard yet
+- Sales outbound status: first developer-facing venue remains locked to `microsoft/autogen` GitHub Discussions -> `Show and tell`; post copy is being rewritten so the explainer is the lead link, tutorial is the support link when available, and no confirmed post, replies, or repo actions are logged yet
+- Marketing status: explainer is in reviewed-draft state and still needs publish-ready packaging plus a linkable public URL; tutorial remains the first support asset, not the lead asset
 
 ## Inbound Interest
 
@@ -42,5 +42,6 @@ Source: latest finance and sales manager reports plus local shared-data inventor
 
 - Shared fallback queue artifact: `shared/company-data/repo-management-queue.md`
 - This dashboard is the shared baseline for awareness, community activity, and inbound interest until automation exists.
+- Sales logging note for 2026-03-13T03-18 UTC: first-venue result remains explicit zero-state pending a linkable explainer package; no public discussion, reply, star, fork, issue, PR, lead, or opportunity was added this cycle.
 - Update when GitHub counts change, outreach produces a visible repo action, or an inbound inquiry is logged.
 - If a metric cannot be verified, mark it `unknown` instead of leaving it blank.
