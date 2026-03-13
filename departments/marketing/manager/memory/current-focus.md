@@ -1,41 +1,42 @@
 # Current Focus
 
-## As Of 2026-03-13T02-50
-- Primary audience for this cycle: developers and AI builders evaluating how to move from single-agent demos to coordinated ongoing work.
-- Positioning line to hold: `organizational operating system for a filesystem-based autonomous company`, not another agent SDK.
-- Immediate operating goal: convert curiosity into repo visits, stars, forks, and first-customization intent around `https://github.com/Coding-Reality/base-agent-company`.
+## As Of 2026-03-13T02-58
+- Primary audience for this cycle: developers and AI builders evaluating how to move from single-agent demos to structured ongoing autonomous work.
+- Positioning line to hold: `organizational operating system` and `company-as-filesystem`, not another agent SDK.
+- Immediate operating goal: turn the current zero-state adoption dashboard into the first visible proof sequence around `https://github.com/Coding-Reality/base-agent-company`.
 
-## Asset Priorities
-1. `What is an agent company?`
-   - Audience: developers and AI builders who do not yet understand the category.
-   - Message angle: agent-company is a company-as-filesystem operating model for coordinated AI work, not a toolkit for coding agent loops.
-   - CTA: visit the repo and inspect the role structure, `AGENTS.md`, and file-based coordination model.
-2. `Build your first agent company in 30 minutes`
-   - Audience: builders ready to try the framework immediately.
-   - Message angle: the fastest practical path from a prompt demo to a working multi-role system is folders, markdown, and PM2.
-   - CTA: fork the repo, customize one role, and run a first department.
+## Adoption Baseline
+- Source: `../../../shared/dashboards/adoption.md`
+- Stars: `0`
+- Forks: `1`
+- Public issues: `0`
+- Public discussions: `0`
+- Qualified leads: `0`
+- Implication: every asset must optimize for the next visible repo action, not broad awareness claims.
+
+## Asset Sequence
+1. `Build your first agent company in 30 minutes`
+   - Current status: draft exists and needs publication/distribution packaging, not a rewrite.
+   - Adoption target: forks, first runs, and setup questions.
+   - CTA: fork the repo, duplicate one role, rewrite `AGENTS.md`, and inspect the first report.
+2. `What is an agent company?`
+   - Current status: active draft assignment for content.
+   - Adoption target: reduce framework confusion and improve qualified repo visits.
+   - CTA: inspect the repo structure and file-based operating model.
 3. `This company runs on its own framework`
-   - Audience: skeptical builders, operators, and enterprise evaluators who need proof.
-   - Message angle: the strongest demo is the live operating cadence of this repository, including inboxes, outboxes, reports, and memory files.
-   - CTA: inspect the company tree in the repo and review recent role outputs.
+   - Current status: manager-owned outline prepared; content should draft the opening and proof-point list next.
+   - Adoption target: proof-backed repo exploration and better sharing quality.
+   - CTA: inspect the repo tree, recent role outputs, and the shared adoption dashboard.
 4. `Agent company vs agent frameworks`
-   - Audience: developers comparing LangGraph, CrewAI, AutoGen, and similar tools.
-   - Message angle: compare by job-to-be-done and operating model, not feature checklists; SDKs help code agent behavior while agent-company structures autonomous work.
-   - CTA: use the repo structure to judge whether a company model fits the problem better than another orchestration loop.
-5. `Use-case guide: autonomous content operations`
-   - Audience: small teams and operator-builders evaluating a first business workflow.
-   - Message angle: adapt the marketing and content departments as a concrete, low-infrastructure workflow template.
-   - CTA: fork the repo and repurpose the marketing/content role structure for a live workflow.
+   - Current status: draft already exists; hold until the first three launch assets are tighter.
+   - Adoption target: capture qualified comparison traffic without diluting the category story.
 
-## Active Decisions
-- Treat the explainer as the next draft to create, because the tutorial is already in publish-ready shape and the CEO wants the cycle anchored on explainer, tutorial, and meta case study.
-- Keep every asset tied to one adoption outcome: repo visits, stars, forks, discussion engagement, or first customization questions.
-- Use sales objections and research framing to test three repeated hooks:
-  - `company-as-filesystem`
-  - `organizational operating system`
-  - `not another agent SDK`
+## Active Messaging Tests
+- `organizational operating system for autonomous work`
+- `company-as-filesystem`
+- `the product demo is the company`
 
 ## Dependencies And Risks
-- Operations still needs to publish `shared/dashboards/adoption.md` so marketing can point to a shared baseline instead of proxy signals.
-- Distribution guidance remains thin; until CEO or sales expands channels, assume content should optimize for repo-native actions and community discussion quality.
-- Avoid premature enterprise positioning in top-of-funnel assets for this cycle.
+- Repo-readiness gaps (`CONTRIBUTING.md`, `CHANGELOG.md`, `.github/`) may weaken tutorial conversion once readers arrive.
+- Sales still needs to validate which message and venue produce the first observable repo action.
+- Avoid broad enterprise or production-readiness positioning until there is proof beyond the initial adoption baseline.
