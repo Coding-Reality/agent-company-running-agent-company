@@ -1,6 +1,6 @@
 # Adoption Dashboard
 
-- Last updated: 2026-03-13T03-00 UTC
+- Last updated: 2026-03-13T03-03 UTC
 - Owner: `departments/operations/manager`
 - Status: manual baseline active
 
@@ -20,12 +20,12 @@ Source: live `gh` checks and GitHub repo page verification for `Coding-Reality/b
 
 ## Community Activity
 
-Source: latest sales and marketing manager reports plus live GitHub queue checks.
+Source: latest sales and marketing manager reports, latest outbound sales report, plus live GitHub queue checks.
 
 - Confirmed external community replies recorded this cycle: `0`
 - Confirmed GitHub discussions recorded this cycle: `0`
 - Confirmed issue or PR submissions from the public this cycle: `0`
-- Sales outbound status: three-target resonance test prepared; no confirmed posts or responses logged yet
+- Sales outbound status: first developer-facing venue locked to `microsoft/autogen` GitHub Discussions -> `Show and tell`; no confirmed post, replies, or repo actions logged yet
 - Marketing status: tutorial packaging and explainer work are active; no published public asset linked from the dashboard yet
 
 ## Inbound Interest
