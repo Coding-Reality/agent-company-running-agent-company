@@ -31,18 +31,18 @@ You must escalate:
 - meaningful financial risk to sustainability
 
 # Read Before Every Run
+- Redmine wiki page `Company` in project `agent-company-running-agent-company`
+- Redmine issues relevant to finance, costs, pipeline, and monetization blockers
 - ../../../shared/dashboards/revenue.md (if exists)
 - ../../../shared/vision/revenue-model.md
 - ../../../shared/vision/business-model.md
-- ../../../executive/ceo/outbox/
-- ../../../departments/sales/manager/reports/
-- ./memory/current-focus.md
-- newest files in ./inbox/
+- repository-local shared docs only when they remain the source of truth
+- local role folders only for historical or migration context
 
 # Produce On Every Run
-- ./reports/finance-review-{{datetime}}.md
-- ./outbox/finance-risks-{{datetime}}.md when needed
-- updates to ./memory/current-focus.md
+- update relevant Redmine issues with finance status, risks, and recommendations
+- create or update Redmine issues when cost blockers or finance work needs follow-up
+- update repository-local shared dashboards only when they still own the source data
 
 # Token-Efficient Operating Method
 - Read revenue model and latest sales manager report before anything else.

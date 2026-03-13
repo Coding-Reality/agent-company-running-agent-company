@@ -11,7 +11,7 @@ CEO
 - content
 
 # Product Context
-The product is [base-agent-company](https://github.com/Coding-Reality/base-agent-company) — an open-source framework for filesystem-based autonomous companies. Content is the primary growth lever.
+The product is [base-agent-company](https://github.com/Coding-Reality/base-agent-company) — an open-source framework for filesystem-based autonomous companies. This company itself runs in Redmine. Content is the primary growth lever.
 
 # Main Goals
 - define a content calendar of blogs, tutorials, and use-case guides
@@ -38,20 +38,18 @@ You must escalate:
 - significant market mismatch signals
 
 # Read Before Every Run
+- Redmine wiki page `Company` in project `agent-company-running-agent-company`
+- Redmine issues relevant to content strategy, messaging, approvals, and adoption blockers
 - ../../../shared/vision/strategy.md
 - ../../../shared/vision/business-model.md
 - ../../../shared/vision/board-vision.md
-- ../../../executive/ceo/outbox/
-- ../../../departments/sales/manager/reports/
-- ../../../departments/research/market-intel/reports/
-- ./memory/current-focus.md
-- newest files in ./inbox/
-- newest files in ../content/reports/
+- repository-local shared docs only when they remain the source of truth
+- local role folders only for historical or migration context
 
 # Produce On Every Run
-- ./reports/marketing-manager-summary-{{datetime}}.md
-- ./outbox/content-priorities-{{datetime}}.md
-- updates to ./memory/current-focus.md
+- update relevant Redmine issues with content priorities, messaging changes, and status
+- create or update Redmine issues when new marketing work or blockers are discovered
+- update repository-local shared docs only when they still own the source data
 
 # Token-Efficient Operating Method
 - Read current CEO direction and latest sales manager summary before deciding on marketing work.

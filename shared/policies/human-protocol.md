@@ -21,42 +21,26 @@ When agents encounter a file with `source: human`, they must:
 
 ## Entry Points
 
-Humans interact with the company through files. Choose the entry point that matches the scope of your input.
+Humans should interact with this company through Redmine first.
 
 ### Strategic Direction
-**File:** `shared/vision/board-vision.md` or `shared/vision/strategy.md`
-**Effect:** Board chair reads these every 4 hours → issues new CEO priorities → cascades to all departments.
-**Use when:** Changing company direction, audience, positioning, product scope, or success criteria.
+**Surface:** Redmine wiki page `Company` or project wiki pages linked from it
+**Use when:** Changing company direction, operating model, audience, positioning, or role doctrine.
 
-### Direct Order to CEO
-**File:** `board/chair/outbox/ceo-priorities-YYYY-MM-DDTHH-MM.md`
-**Effect:** CEO reads within 15 minutes → cascades to managers within one cycle.
-**Use when:** You want something executed immediately without waiting for the board cycle.
+### Tasking, Blockers, And Follow-Up
+**Surface:** Redmine issues in project `agent-company-running-agent-company`
+**Use when:** Assigning work, changing status, escalating blockers, or requesting execution.
 
-### Cross-Role Task
-**File:** `shared/company-data/tasks/task-YYYY-MM-DDTHH-MM.md`
-**Effect:** CEO and assigned roles pick it up on their next run.
-**Use when:** A specific deliverable needs one or more departments to act.
+### Repository Data Updates
+**Surface:** `shared/dashboards/*.md`, `shared/company-data/**`, or other shared repo documents
+**Use when:** You have product data or repo-owned facts that still belong in version control.
 
-### Direct Message to a Role
-**File:** `{role-path}/inbox/human-YYYY-MM-DDTHH-MM.md`
-**Effect:** That agent reads it on its next run.
-**Use when:** You need a specific role to do something without involving the chain of command.
-
-### Override Role Context
-**File:** `{role-path}/memory/current-focus.md`
-**Effect:** Immediately changes what that agent prioritizes on its next run.
-**Use when:** An agent is stuck in a loop or focused on the wrong thing.
-
-### Update Company Data
-**Files:** `shared/dashboards/*.md`, `shared/company-data/**`
-**Effect:** Agents read these as ground truth for metrics, leads, pipeline, etc.
-**Use when:** You have real-world data that agents cannot observe (domain purchases, revenue, partnerships, external conversations).
-
-### Change Role Authority
-**File:** `{role-path}/AGENTS.md`
-**Effect:** Permanently changes what the role can do, reads, and produces.
+### Structural Role Changes
+**Surface:** `{role-path}/AGENTS.md`
 **Use when:** A role needs expanded or restricted scope.
+
+### Legacy Filesystem Inputs
+Role-local `inbox/`, `outbox/`, `reports/`, and `memory/` files are legacy interfaces only. Do not use them as the normal command path for this company.
 
 ## Company Assets & Real-World Facts
 
@@ -83,6 +67,12 @@ Agents cannot observe the real world. When humans acquire assets, close deals, h
 
 Agents should check this file when making decisions about branding, distribution, URLs, or external presence.
 
+## Work Tracking Requirement
+
+All substantive company work should be tracked in Redmine.
+
+Repository-local markdown may still exist for shared product data or migration records, but it is not the primary execution surface. If a human drops work into a legacy local role folder, agents should migrate it into Redmine during triage.
+
 ## Requesting Human Action (Agent → Human)
 
 Agents cannot interact with the outside world. When the company needs something only a human can do, agents must formally request it.
@@ -99,7 +89,7 @@ Agents cannot interact with the outside world. When the company needs something 
 
 ### How to Request
 
-Create a file in `shared/company-data/human-queue/`:
+Create or update a Redmine issue first. Use `shared/company-data/human-queue/` only when a repository-local audit trail is still required by migration.
 
 **Filename:** `request-YYYY-MM-DDTHH-MM-<slug>.md`
 
@@ -151,10 +141,9 @@ For `low` and `medium` urgency, Telegram notification is optional.
 ### How Humans Respond
 
 When a human completes a request:
-1. Edit the request file: change `status: open` to `status: done`
-2. Add a `## Result` section at the bottom with what was done
-3. Update any relevant company data files (assets.md, dashboards, etc.)
-4. Optionally drop a file in the requesting role's inbox if further agent action is needed
+1. Update the Redmine issue status and result
+2. Update any relevant company data files (assets.md, dashboards, etc.)
+3. Only touch local role folders if legacy migration context still requires it
 
 ### Request Statuses
 
@@ -166,8 +155,8 @@ When a human completes a request:
 ## Priority Rules
 
 1. A human input always outranks an agent-generated directive at the same level.
-2. A human writing directly to a role's inbox outranks that role's current focus.
-3. A human editing `board-vision.md` outranks all existing CEO priorities.
+2. A human updating the relevant Redmine issue or doctrine wiki outranks older agent-generated execution state.
+3. A human editing `board-vision.md` or the company wiki outranks all existing CEO priorities.
 4. If two human inputs conflict, the newer datetime wins.
 5. Agents must never silently discard or deprioritize a human input — if they cannot act on it, they must escalate it in their report.
 
@@ -182,19 +171,19 @@ Every agent that reads a human input must:
 
 ### "I just bought a domain"
 1. Add the domain to `shared/company-data/assets.md`
-2. Create `board/chair/outbox/ceo-priorities-YYYY-MM-DDTHH-MM.md` with frontmatter and instructions to incorporate the domain into launch strategy
-3. CEO cascades to marketing (brand/website), operations (DNS/hosting), sales (outreach URLs)
+2. Create or update the relevant Redmine issue with instructions to incorporate the domain into launch strategy
+3. CEO cascades through Redmine to marketing (brand/website), operations (DNS/hosting), and sales (outreach URLs)
 
 ### "Change the target audience"
 1. Edit `shared/vision/board-vision.md` — update the "Who It's For" section
 2. Board chair picks it up → rewrites CEO priorities → entire org pivots
 
 ### "Stop all outreach until the blog is ready"
-1. Write to `board/chair/outbox/ceo-priorities-YYYY-MM-DDTHH-MM.md` with a hold directive
+1. Update or create the relevant Redmine issue with a hold directive
 2. CEO reads it → tells sales manager to pause → outbound agent stops
 
 ### "This agent is doing the wrong thing"
-1. Edit `{role}/memory/current-focus.md` with corrected priorities
+1. Update the relevant Redmine issue or doctrine wiki entry with corrected priorities
 2. Or edit `{role}/AGENTS.md` if the problem is structural
 
 ### Agent needs a domain configured (agent → human)

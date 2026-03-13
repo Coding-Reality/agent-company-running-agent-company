@@ -1,3 +1,5 @@
+Historical bootstrap artifact only. The live baseline company doctrine, including the role-folder contract (`AGENTS.md`, `inbox/`, `outbox/`, `reports/`, `memory/`), is authoritative only in the Redmine wiki page `Company`.
+
 Below is a polished master prompt you can drop into Codex, followed by a clean repo tree and 4 strong `AGENTS.md` examples.
 
 ## Master prompt
@@ -1035,4 +1037,3 @@ Treat the repo like an office building:
 That framing will keep the whole thing sane.
 
 I can next turn this into a tighter **COMPANY.md** and **shared policy pack** so the entire org starts with one coherent operating doctrine.
-

@@ -1,28 +1,28 @@
 # Runtime Playbook
 
 ## Goal
-Launch each role with a compact prompt and let the agent inspect the filesystem as needed.
+Launch each role with a compact prompt and let the agent execute primarily against Redmine.
 
 ## Default Run Flow
 1. Read local `AGENTS.md`.
-2. Read [COMPANY.md](/home/andrew/entities/cr/projects/agent-company/COMPANY.md) and the policy files only if they are needed for the current decision.
-3. Check local `memory/current-focus.md`.
-4. Use `ls -t` or `find` to identify the newest relevant files.
-5. Read only the files needed for the current decision or output.
-6. Write a report, any required delegations, and updated memory.
+2. Check the Redmine wiki page `Company` and the relevant Redmine issues before acting.
+3. Read repository-local policy or product files only if they are needed for the current decision.
+4. Read role-local historical files only if migration context requires them.
+5. Make decisions and record execution in Redmine.
+6. Update repository-local shared documents only when the source of truth for that document still lives in the repo.
 7. If changes were made, commit with the required agent prefix and push when safe.
 
 ## Token-Efficient Discovery
-- Use `rg --files` to map candidate files quickly.
-- Use `ls -t inbox outbox reports` inside the role folder before opening anything.
-- Prefer "current state" files and newest reports over entire directories.
-- If a downstream role has no recent output, read its `AGENTS.md` and latest memory file before expanding further.
+- Use Redmine issue filters and the wiki before repo-wide file scans.
+- Use `rg --files` to map candidate repository files quickly when local docs are still needed.
+- Prefer current shared source files over historical role-local directories.
+- If migration context is needed, inspect only the newest relevant historical files before expanding further.
 
 ## Hiring And Activation
 If a required role is missing or dormant:
-- write an activation or hiring task to `shared/company-data/tasks/`
-- issue a directive in your `outbox/`
-- note the dependency in your report
+- create or update a Redmine issue for activation or hiring
+- note the dependency in Redmine
+- update local task files only if the migration still requires a mirrored record
 
 Do not pretend a missing role has acted unless files exist showing that action.
 

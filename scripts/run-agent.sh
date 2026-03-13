@@ -56,12 +56,15 @@ $AGENT_NAME
 
 Execution requirements:
 - Read and obey your local AGENTS.md first.
-- Use token-efficient file discovery before opening documents.
-- Prefer current-focus files, indexes, and newest reports.
+- Use Redmine on every execution.
+- This company is Redmine-native. Role-local inbox/outbox/reports/memory directories are legacy artifacts, not the primary workflow.
+- Before substantive work, check the relevant Redmine issue set and the Redmine wiki page titled Company.
+- If substantive work has no Redmine issue yet, create one or record a concrete escalation that Redmine access is blocked.
+- Before finishing, sync any changed status, owner, blocker, scope, or durable decision back to Redmine.
+- Use token-efficient discovery before opening repository documents.
+- Prefer Redmine and shared repository sources over role-local historical files.
 - Create useful outputs on every run unless genuinely blocked.
-- Write datetime-stamped files into reports/ and outbox/ (format: YYYY-MM-DDTHH-MM, e.g. 2026-03-13T14-30).
-- IMPORTANT: Use the current datetime (date and time), not just the date, in all output filenames. Runs happen frequently and date-only names cause collisions.
-- Update memory/current-focus.md when your operating context changes.
+- Do not create new role-local reports/outbox/memory files unless a migration step explicitly requires them.
 - If a needed role is missing or inactive, create a task in shared/company-data/tasks and note it in your report.
 - If you make file changes, commit them in this repository with the prefix [$AGENT_NAME]: followed by a concise summary.
 - If your commit succeeds, push it to origin unless the repo state makes that unsafe.
@@ -82,7 +85,7 @@ Telegram reporting — IMPORTANT:
 - Keep Telegram messages concise — bullet points, not paragraphs.
 - If the send-telegram script fails, continue your work normally. Notifications are best-effort.
 
-Read this role specification now and then continue working from the filesystem:
+Read this role specification now and then continue working with Redmine as the primary execution surface:
 EOF
 
 cat "$AGENT_DIR/AGENTS.md" >>"$PROMPT_FILE"
@@ -91,14 +94,21 @@ cat "$AGENT_DIR/AGENTS.md" >>"$PROMPT_FILE"
 tg_send "🟢 *[$AGENT_NAME]* run starting"
 # ────────────────────────────────────────────────────────────────
 
-if [[ -z "${OPENAI_API_KEY:-}" ]]; then
-  echo "error: OPENAI_API_KEY must be set in the environment" >&2
-  tg_send "❌ *[$AGENT_NAME]* failed — OPENAI_API_KEY not set"
+AUTH_STATUS=""
+if AUTH_STATUS="$(codex login status 2>/dev/null)"; then
+  :
+elif [[ -n "${OPENAI_API_KEY:-}" ]]; then
+  echo "$OPENAI_API_KEY" | codex login --with-api-key >/dev/null 2>&1 || true
+  if ! AUTH_STATUS="$(codex login status 2>/dev/null)"; then
+    echo "error: failed to authenticate Codex with OPENAI_API_KEY" >&2
+    tg_send "❌ *[$AGENT_NAME]* failed — Codex API-key login failed"
+    exit 1
+  fi
+else
+  echo "error: Codex is not logged in and OPENAI_API_KEY is not set" >&2
+  tg_send "❌ *[$AGENT_NAME]* failed — no Codex login or OPENAI_API_KEY"
   exit 1
 fi
-
-# Ensure codex uses API key auth (not ChatGPT browser auth)
-echo "$OPENAI_API_KEY" | codex login --with-api-key 2>/dev/null || true
 
 codex exec --dangerously-bypass-approvals-and-sandbox - <"$PROMPT_FILE"
 EXIT_CODE=$?

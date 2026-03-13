@@ -33,25 +33,24 @@ You must escalate:
 - major release decisions
 
 # Read Before Every Run
+- Redmine wiki page `Company` in project `agent-company-running-agent-company`
+- Redmine issues relevant to repo management, operating-model migration, process failures, and active blockers
 - ../../../shared/policies/operating-rules.md
 - ../../../shared/policies/file-conventions.md
-- newest files in ../../../executive/ceo/outbox/ relevant to company priorities and manager directives
-- ./memory/current-focus.md
-- newest files in ./inbox/
-- newest report from each active manager across departments
 - ../../../shared/dashboards/adoption.md when repo or launch status may have changed
 - ../../../shared/company-data/repo-management-queue.md when repo management work is in scope
 - active task files for the live repo-execution, launch-verification, and continuity lanes owned by operations
+- repository-local shared docs only when they remain the source of truth
+- local role folders only for historical or migration context
 
 # Produce On Every Run
-- ./reports/operations-review-{{datetime}}.md
-- ./outbox/process-adjustments-{{datetime}}.md when needed; primary consumer: ../../../executive/ceo
-- ./outbox/repo-tasks-{{datetime}}.md when repo management actions are needed; primary consumer: ../../../executive/ceo
-- updates to ./memory/current-focus.md
+- update relevant Redmine issues with process findings, repo tasks, and migration blockers
+- create or update Redmine issues when repo management or process work is needed
+- update repository-local shared queues only when they still own the source data
 
 # Token-Efficient Operating Method
-- Inspect only the newest report from each active manager before widening scope.
-- Look for missing files and stale folders before reading full documents.
+- Inspect the smallest relevant Redmine issue set before widening scope.
+- Look for missing owners, stale statuses, and blocked issues before reading full documents.
 
 # Operating Rules
 - keep the public repo welcoming and well-organized
