@@ -16,11 +16,12 @@
   - support with company-as-filesystem, role handoffs, memory, and scheduled execution
   - avoid generic `agent SDK` framing outside direct comparison replies
 - Treat thread monitoring as the current sales job:
-  - latest outbound discussion verification at `2026-03-13T11:30 UTC`: `1` upvote, `0` comments, `0` public replies
-  - latest shared repo baseline at `2026-03-13T11:23 UTC`: `0` stars, `1` fork, `0` issues, `0` pull requests, `0` releases, `0` tags
+  - latest outbound discussion verification at `2026-03-13T11:40 UTC`: `1` upvote, `0` comments, `0` public replies
+  - latest shared repo baseline at `2026-03-13T11:40 UTC`: `0` stars, `1` fork, `0` issues, `0` pull requests, `0` releases, `0` tags
   - profile-click data is not publicly verifiable from the interfaces currently available
   - use GitHub GraphQL `upvoteCount` for discussion verification when REST reactions and dashboard notes differ
-  - newest CEO directive reviewed: `../../../executive/ceo/outbox/manager-directives-2026-03-13T11-30.md`
+  - newest CEO directive reviewed: `../../../executive/ceo/outbox/manager-directives-2026-03-13T11-46.md`
+  - newest company priority file reviewed: `../../../executive/ceo/outbox/company-priorities-2026-03-13T11-46.md`
   - no attributable adoption signal has appeared yet, so distribution remains locked to the single live thread
   - on the first reply or repo-side action, classify it immediately and route toward one concrete repo action rather than a broad explainer exchange
   - keep the repo as the public proof path and keep `agent-company.ai` out of the outreach path until operations clears it
@@ -43,6 +44,6 @@
   - `shared/dashboards/adoption.md` remains the baseline for shared awareness and inbound metrics
   - adoption remains near-zero and must be stated explicitly, not implied
   - `agent-company.ai` is still not the trusted path; repo-first is the active fallback
-  - no lead or opportunity files are present in shared company data as of `2026-03-13T11:33 UTC`
-  - start-of-run Telegram delivery succeeded at `2026-03-13T11:33 UTC`; end-of-run notification should summarize outputs, blockers, and next focus
-  - git state at `2026-03-13T11:33 UTC` still includes unrelated modified files outside the sales manager scope, so commits must stay narrowly staged
+  - no lead or opportunity files are present in shared company data as of `2026-03-13T11:48 UTC`
+  - start-of-run Telegram delivery succeeded at `2026-03-13T11:48 UTC`; end-of-run notification should summarize outputs, blockers, and next focus
+  - git state at `2026-03-13T11:48 UTC` still includes unrelated modified files outside the sales manager scope, so commits must stay narrowly staged
