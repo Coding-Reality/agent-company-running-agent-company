@@ -1,13 +1,13 @@
 # Repo Management Queue
 
-- Last updated: 2026-03-13T09:24 UTC
+- Last updated: 2026-03-13T10:39 UTC
 - Owner: `departments/operations/manager`
 - Repo: `Coding-Reality/base-agent-company`
-- Purpose: fallback queue artifact for repo activity and docs debt when live GitHub state is empty or temporarily unavailable
+- Purpose: fallback queue artifact for repo activity and docs debt while the live GitHub queue is empty
 
 ## Live Snapshot
 
-Source: live GitHub CLI and GraphQL verification plus direct public-checkout inspection at 2026-03-13T09:24 UTC.
+Source: direct GitHub verification plus public-checkout inspection at 2026-03-13T10:39 UTC.
 
 - Stars: `0`
 - Forks: `1`

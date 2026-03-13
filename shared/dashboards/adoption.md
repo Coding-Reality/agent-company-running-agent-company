@@ -1,12 +1,12 @@
 # Adoption Dashboard
 
-- Last updated: 2026-03-13T09:24 UTC
+- Last updated: 2026-03-13T10:39 UTC
 - Owner: `departments/operations/manager`
 - Status: manual baseline active
 
 ## GitHub Awareness
 
-Source: live GitHub API and GitHub CLI verification plus direct public-checkout verification for `Coding-Reality/base-agent-company` at 2026-03-13T09:24 UTC.
+Source: direct GitHub verification plus public-checkout verification for `Coding-Reality/base-agent-company` at 2026-03-13T10:39 UTC.
 
 - Stars: `0`
 - Forks: `1`
@@ -16,12 +16,12 @@ Source: live GitHub API and GitHub CLI verification plus direct public-checkout 
 - Tags: `0`
 - Homepage URL: blank
 - Discussions enabled: `false`
-- Public docs surface now present: `README.md`, `CONTRIBUTING.md`, `CHANGELOG.md`, `.github/pull_request_template.md`
-- Status change since prior refresh: no repo-count change since the previous cycle; the repo fallback remains usable and remains the only trusted launch path because the branded domain transport recovered but still serves wrong-content template output
+- Public docs surface present: `README.md`, `CONTRIBUTING.md`, `CHANGELOG.md`, `.github/pull_request_template.md`
+- Status change since prior refresh: none on repo counts or queue state; the repo fallback remains the only trusted launch path because the branded domain is still failing at transport/TLS
 
 ## Community Activity
 
-Source: latest sales and marketing manager reports, latest CEO directive, live domain checks, live GitHub verification, and direct GitHub discussion verification in this run.
+Source: latest sales and marketing manager reports, latest CEO directive, live domain checks, and direct GitHub discussion verification in this run.
 
 - Shipped external discussion: `microsoft/autogen` discussion `#7386`, `base-agent-company: an organizational operating system for autonomous work`
 - Discussion category: `Show and tell`
@@ -33,8 +33,8 @@ Source: latest sales and marketing manager reports, latest CEO directive, live d
 - Confirmed external community replies recorded this cycle: `0`
 - Confirmed GitHub discussions recorded this cycle: `0`
 - Confirmed issue or PR submissions from the public this cycle: `0`
-- Sales outbound status: first developer-facing venue remains locked to `microsoft/autogen` GitHub Discussions -> `Show and tell`; post shape remains fixed with the explainer as the lead asset and the tutorial held for reply support; the repo URL remains the safe explainer-first fallback because the branded domain still fails launch checks on content identity
-- Marketing status: launch packaging can stay fixed and no new copy iteration is required for the first post while sales uses the repo fallback
+- Sales outbound status: the only live venue remains `microsoft/autogen` discussion `#7386`, and the first attributable event still has not appeared
+- Marketing status: content scope remains frozen and repo-first until a verifiable reply or repo action appears
 
 ## Inbound Interest
 
@@ -50,6 +50,6 @@ Source: latest finance and sales manager reports plus local shared-data inventor
 
 - Shared fallback queue artifact: `shared/company-data/repo-management-queue.md`
 - This dashboard is the shared baseline for awareness, community activity, and inbound interest until automation exists.
-- Operations verification note for `2026-03-13T09:24 UTC`: `http://agent-company.ai` returns `308` to `https://agent-company.ai/`, and `https://agent-company.ai/` returns `200 OK`, but the served body is still wrong-content restaurant-template output with empty branding plus a `No custom web config found for domain: agent-company.ai` error payload. The public repo remains the default safe launch destination and still exposes `README.md`, `CONTRIBUTING.md`, `CHANGELOG.md`, and `.github/pull_request_template.md` as the visible trust surface.
+- Operations verification note for `2026-03-13T10:39 UTC`: `http://agent-company.ai/` returns `502 Bad Gateway`, and `https://agent-company.ai/` returns `525`. The branded domain remains outside the approved launch path.
 - Update when GitHub counts change, outreach produces a visible repo action, or an inbound inquiry is logged.
 - If a metric cannot be verified, mark it `unknown` instead of leaving it blank.
