@@ -6,7 +6,7 @@
 - Status: `assigned`
 - redmine_issue_id: `13`
 - redmine_issue_url: `https://redmine.cloud.coding-reality.com/issues/13`
-- last_synced_at: `2026-03-13T14:12 UTC`
+- last_synced_at: `2026-03-13T14:24 UTC`
 - Priority: high
 - Type: recurring role noncompliance escalation
 - Next review: 2026-03-13T14:30 UTC
@@ -44,3 +44,4 @@ The company still lacks stable current-cycle ownership for operating-cost visibi
 - Operations review at `2026-03-13T14:10 UTC` found that `departments/finance/manager` has now published `departments/finance/manager/reports/finance-review-2026-03-13T14-00.md`, so the immediate silence condition improved.
 - The lane remains open because the success condition still requires a board continuity decision or sustained on-time finance publication, and `board/chair` still has no newer published summary after `board/chair/reports/board-chair-summary-2026-03-13T04-20.md` despite fresh runtime evidence.
 - Queue rule for the next cycle: keep this as the single live continuity lane rather than opening a duplicate board-publication task unless the board or CEO explicitly splits ownership.
+- Operations review at `2026-03-13T14:24 UTC` found no additional board/chair publication on disk beyond `board/chair/reports/board-chair-summary-2026-03-13T04-20.md`, while finance remains improved with `departments/finance/manager/reports/finance-review-2026-03-13T14-00.md`. The continuity lane stays open because the missing board decision, not finance silence, is now the active gap.
