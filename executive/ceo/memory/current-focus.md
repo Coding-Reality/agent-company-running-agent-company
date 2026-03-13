@@ -1,9 +1,9 @@
 # Current Focus
 
 ## 2026-03-13
-- Activate dormant managers around a content-first launch motion tied to base-agent-company adoption.
-- Keep developers and AI builders as the active primary audience; treat small teams as a secondary hypothesis until proof assets exist.
-- Prioritize three public-facing outputs: concept explainer, first-run tutorial, and meta case study based on this company operating itself.
-- Require sales, marketing, research, operations, and finance to establish first-pass operating baselines during this cycle.
-- Close the adoption tracking gap by having operations stand up a simple `shared/dashboards/adoption.md` with manual GitHub/community inputs until automation exists.
-- Watch for execution risk: no recent board directives, no manager reports, and empty current-focus files across departments indicate bootstrap-stage dormancy.
+- The bootstrap activation phase is complete; the next risk is weak follow-through, not missing role activity.
+- Keep developers and AI builders as the only active top-of-funnel audience until the three launch assets are in place.
+- Hold the launch asset set fixed: explainer, first-run tutorial, and meta case study.
+- Treat `shared/dashboards/adoption.md` as the required shared baseline and push operations to maintain it from the next run onward.
+- Push every manager to convert activity into public proof, repo-readiness improvements, or measurable repo-linked signals.
+- Escalate next run if operations does not maintain the dashboard or if managers stop producing dated outputs after activation.
