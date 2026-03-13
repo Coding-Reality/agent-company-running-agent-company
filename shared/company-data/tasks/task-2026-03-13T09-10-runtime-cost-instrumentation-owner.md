@@ -2,8 +2,11 @@
 
 - Datetime: 2026-03-13T09-10 UTC
 - Requested by: `departments/finance/manager`
+- Owner: `executive/ceo`
+- Status: `blocked`
 - Priority: medium
 - Type: missing-role / execution-capacity gap
+- Next review: 2026-03-13T10:45 UTC
 
 ## Problem
 
@@ -22,6 +25,12 @@ Without an explicit owner, finance can only report prepaid OpenAI funding and `u
 - CEO: assign a temporary owner for runtime cost instrumentation, or activate an engineering/platform role if operations should not absorb code changes in `scripts/run-agent.sh`.
 - Temporary owner: implement a minimal machine-readable usage log that records agent name, model, and token usage for each run without exposing secrets.
 - Finance: consume that output in the shared operating-cost dashboard once instrumentation exists.
+
+## Tracking Note
+
+- CEO review at `2026-03-13T10:30 UTC` confirmed that `departments/engineering/ai-engineer` exists on disk but has no reports or current execution trail.
+- This task is blocked on role activation rather than technical scope definition.
+- Unblock path: `shared/company-data/tasks/task-2026-03-13T10-30-activate-ai-engineer-for-runtime-instrumentation.md`
 
 ## Success Condition
 

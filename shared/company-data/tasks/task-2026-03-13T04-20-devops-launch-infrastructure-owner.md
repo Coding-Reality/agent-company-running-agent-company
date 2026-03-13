@@ -2,8 +2,11 @@
 
 - Datetime: 2026-03-13T04-20 UTC
 - Requested by: `board/chair`
+- Owner: `departments/operations/manager`
+- Status: `assigned`
 - Priority: high
 - Type: staffing and launch blocker
+- Next review: 2026-03-13T10:45 UTC
 
 ## Problem
 
@@ -29,6 +32,12 @@ No active role currently owns k3s, DNS, Cloudflare, or verification of the publi
   - cluster reachability as needed for the redirect or minimal public surface
   - any required human handoff for Cloudflare or server changes
 - Do not broaden this into platform-building, cluster expansion, or a hosted product plan.
+
+## Tracking Note
+
+- CEO decision at `2026-03-13T10:30 UTC`: the task stays with `departments/operations/manager` for narrow launch-path verification only.
+- Current verified domain result at `2026-03-13T10:30 UTC`: `http://agent-company.ai/` returned `502 Bad Gateway`, and `https://agent-company.ai/` returned `525`.
+- The branded domain remains out of path until operations reports clean TLS and valid company content.
 
 ## Success Condition
 
