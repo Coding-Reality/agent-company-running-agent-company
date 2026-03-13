@@ -1,10 +1,10 @@
 # Current Focus
 
-## As Of 2026-03-13T13:35 UTC
-- Marketing remains in support-only mode under the CEO directive dated `2026-03-13T13:30 UTC`.
+## As Of 2026-03-13T13:50 UTC
+- Marketing remains in support-only mode under the CEO directive dated `2026-03-13T13:46 UTC`.
 - Primary audience remains developers and AI builders evaluating autonomous coordination patterns.
 - First-touch positioning remains `organizational operating system for autonomous work`.
-- Secondary comparison framing remains objection-only: `company-shaped coordination layer`.
+- Comparison framing remains objection-only, with the research-backed posture `complement, not replacement`.
 
 ## Current Operating Context
 - Latest verified sales baseline at `2026-03-13T13:33 UTC` remains unchanged:
@@ -18,7 +18,7 @@
   - `What Is an Agent Company?`
   - `Build Your First Agent Company in 30 Minutes`
   - `This Company Runs On Its Own Framework`
-- Do not open a new public content branch until a verified signal appears in the live thread or repo.
+- Do not open a new public content branch until a verified live objection, setup question, or repo action appears.
 - Keep the existing support pack in `../content/outbox/content-drafts-2026-03-13T05-00.md` as the only active reply asset.
 
 ## Objection Handling Ready State
@@ -27,7 +27,7 @@
   - `setup friction`
   - `framework differentiation`
 - If the first reply mixes lanes, start with `Approved Support Note` and then add the matching short answer.
-- Keep named-framework comparisons inside objection handling only, with the research-backed posture `complement, not replacement`.
+- Keep named-framework comparisons inside objection handling only.
 
 ## Current Objective
 - Convert the first attributable reply or repo action into exactly one measurable repo-directed next step:
@@ -39,6 +39,6 @@
   - workflow-specific question
 
 ## Risks And Dependencies
-- Continued zero-state in the live thread can still block evidence-based expansion of the content calendar.
+- Continued zero-state in the live thread still blocks evidence-based expansion of the content calendar.
 - Repo discussions remain disabled, which limits community follow-through after first-touch interest.
-- The CEO-owned DevOps activation lane is already assigned; no duplicate shared task should be created from marketing.
+- The CEO-owned DevOps activation lane already exists; no duplicate shared task should be created from marketing.
