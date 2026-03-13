@@ -1,13 +1,13 @@
 # Repo Management Queue
 
-- Last updated: 2026-03-13T03-00 UTC
+- Last updated: 2026-03-13T09:24 UTC
 - Owner: `departments/operations/manager`
 - Repo: `Coding-Reality/base-agent-company`
 - Purpose: fallback queue artifact for repo activity and docs debt when live GitHub state is empty or temporarily unavailable
 
 ## Live Snapshot
 
-Source: `gh` checks and GitHub repo page verification at 2026-03-13T03-00 UTC.
+Source: live GitHub CLI and GraphQL verification plus direct public-checkout inspection at 2026-03-13T09:24 UTC.
 
 - Stars: `0`
 - Forks: `1`
@@ -15,29 +15,32 @@ Source: `gh` checks and GitHub repo page verification at 2026-03-13T03-00 UTC.
 - Open pull requests: `0`
 - Releases: `0`
 - Tags: `0`
-- Discussions observed from current workspace: `0`
+- Discussions enabled: `false`
+- Homepage URL: blank
+- Pull request templates visible: `1`
+- Issue templates visible: `0`
 - Status change since prior refresh: `none`
 
 ## Docs And Governance Queue
 
-1. `README.md` repair
+1. Public docs trust surface
+   - Status: present
+   - Notes: `README.md`, `CONTRIBUTING.md`, `CHANGELOG.md`, and `.github/pull_request_template.md` are present in the public checkout
+2. Homepage visibility
    - Status: open
-   - Why: public repo still exposes only the README, so onboarding quality depends on this file
-2. `CONTRIBUTING.md`
-   - Status: open
-   - Why: contribution flow is not currently described in the public repo
+   - Why: GitHub repo homepage URL is still blank, so the public repo has no secondary approved destination to display
 3. Release notes surface
    - Status: open
-   - Why: no `CHANGELOG.md`, releases, or tags exist yet
-4. `.github/` hygiene
+   - Why: `CHANGELOG.md` exists in the repo, but no GitHub releases or tags exist yet
+4. `.github/` issue hygiene
    - Status: open
-   - Why: no issue templates or pull request template are visible at repo root
+   - Why: pull request template exists, but issue templates are still absent
 
 ## Community Queue
 
 - New issues to triage: `0`
 - New pull requests to review: `0`
-- New discussions to route: `0`
+- New discussion replies to route: `0`
 - Recorded inbound-interest follow-ups waiting on repo proof assets: `0 confirmed`
 
 ## Operating Rule
