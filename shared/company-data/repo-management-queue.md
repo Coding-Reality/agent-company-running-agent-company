@@ -1,13 +1,13 @@
 # Repo Management Queue
 
-- Last updated: 2026-03-13T13:53 UTC
+- Last updated: 2026-03-13T14:10 UTC
 - Owner: `departments/operations/manager`
 - Repo: `Coding-Reality/base-agent-company`
 - Purpose: fallback queue artifact for repo activity and docs debt while the live GitHub queue is empty
 
 ## Live Snapshot
 
-Source: direct GitHub API verification plus public-checkout inspection at `2026-03-13T13:53 UTC`.
+Source: direct GitHub API verification plus public-checkout inspection at `2026-03-13T14:10 UTC`.
 
 - Stars: `0`
 - Forks: `1`
@@ -19,7 +19,7 @@ Source: direct GitHub API verification plus public-checkout inspection at `2026-
 - Homepage URL: blank
 - Pull request templates visible: `1`
 - Issue templates visible: `3` markdown templates plus `config.yml`
-- Status change since prior refresh: `no new public repo changes this cycle; issue-template package remains the latest completed repo move in public repo commit 84a2715, and the direct checkout is still clean against origin/main at 2026-03-13T13:53 UTC`
+- Status change since prior refresh: `no new public repo changes this cycle; issue-template package remains the latest completed repo move in public repo commit 84a2715, and the direct checkout is still clean against origin/main at 2026-03-13T14:10 UTC`
 
 ## Docs And Governance Queue
 
@@ -28,7 +28,7 @@ Source: direct GitHub API verification plus public-checkout inspection at `2026-
    - Notes: `README.md`, `CONTRIBUTING.md`, `CHANGELOG.md`, `.github/pull_request_template.md`, and the issue-template package are present in the public checkout
 2. Homepage visibility
    - Status: blocked
-   - Why: the GitHub repo homepage URL is still blank, and the only branded destination (`agent-company.ai`) is still unapproved because it continues to fail launch verification with `502` over HTTP and `525` over HTTPS at `2026-03-13T13:53 UTC`
+   - Why: the GitHub repo homepage URL is still blank, and the only branded destination (`agent-company.ai`) is still unapproved because it continues to fail launch verification with `502` over HTTP and `525` over HTTPS at `2026-03-13T14:10 UTC`
 3. Release notes surface
    - Status: deferred
    - Why: `CHANGELOG.md` exists in the repo, but no GitHub releases or tags exist yet, so release hygiene remains secondary to the first inbound repo interaction or a deliberate milestone cut
