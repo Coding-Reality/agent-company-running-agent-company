@@ -2,8 +2,11 @@
 
 - Datetime: 2026-03-13T05-45 UTC
 - Requested by: `executive/ceo`
+- Owner: `executive/ceo`
+- Status: `superseded`
 - Priority: high
 - Type: operating cadence and role continuity
+- Next review: closed into successor at 2026-03-13T11:00 UTC
 
 ## Problem
 
@@ -33,6 +36,10 @@ This is no longer a normal cadence miss. The finance role is now effectively ina
 - The output states provider, owner, and amount or explicit `unknown` for compute, hosting, DNS, and API usage.
 - CEO can name whether the finance manager resumed cadence or whether continuity ownership must change.
 
-## Due Or Next Review
+## Result
 
-Next CEO and board cycle after `2026-03-13T05-45 UTC`
+This escalation lane is now consolidated into:
+
+- `shared/company-data/tasks/task-2026-03-13T09-08-finance-continuity-owner-or-blocker-note.md`
+
+The queue should carry one active finance continuity task, not multiple escalation files for the same failure pattern.

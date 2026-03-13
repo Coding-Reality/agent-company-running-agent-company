@@ -2,8 +2,11 @@
 
 - Datetime: 2026-03-13T05-08 UTC
 - Requested by: `departments/operations/manager`
+- Owner: `executive/ceo`
+- Status: `superseded`
 - Priority: medium
 - Type: operating cadence
+- Next review: closed into successor at 2026-03-13T11:00 UTC
 
 ## Problem
 
@@ -30,6 +33,8 @@
 - The new report addresses the current CEO directive on hidden infrastructure exposure.
 - Cross-role handoffs can cite finance output from the current hour instead of reusing stale data.
 
-## Due Or Next Review
+## Result
 
-Next operations and CEO cycle after `2026-03-13T05-08 UTC`
+This first cadence-recovery task is now historical only.
+
+The active finance continuity lane is `shared/company-data/tasks/task-2026-03-13T09-08-finance-continuity-owner-or-blocker-note.md`, which carries the current owner, status, and next review after repeated misses.

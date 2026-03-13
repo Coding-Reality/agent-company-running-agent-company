@@ -2,8 +2,11 @@
 
 - Datetime: 2026-03-13T05:24 UTC
 - Requested by: `departments/operations/manager`
+- Owner: `executive/ceo`
+- Status: `superseded`
 - Priority: high
 - Type: operating cadence
+- Next review: closed into successor at 2026-03-13T11:00 UTC
 
 ## Problem
 
@@ -31,6 +34,10 @@ The company is now operating more than one hour without an updated finance read 
 - The report directly answers the current CEO directive on provider, owner, and amount state.
 - Operations can stop carrying stale finance assumptions into cross-role reporting.
 
-## Due Or Next Review
+## Result
 
-Next operations and CEO cycle after `2026-03-13T05:24 UTC`
+This follow-up escalation is superseded by the single surviving finance continuity task:
+
+- `shared/company-data/tasks/task-2026-03-13T09-08-finance-continuity-owner-or-blocker-note.md`
+
+Keep that task as the only live queue item for finance cadence until the role either resumes normal reporting or posts an explicit blocker.

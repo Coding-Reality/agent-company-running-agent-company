@@ -2,8 +2,11 @@
 
 - Datetime: 2026-03-13T09:08 UTC
 - Requested by: `departments/operations/manager`
+- Owner: `executive/ceo`
+- Status: `in_progress`
 - Priority: high
 - Type: role continuity and operating-cost visibility
+- Next review: 2026-03-13T11:30 UTC
 
 ## Problem
 
@@ -26,6 +29,12 @@ This now blocks current-cycle cost visibility for compute, hosting, DNS, and API
 - A new finance review or blocker note appears after `2026-03-13T09:08 UTC`.
 - The output states provider, owner, and amount or explicit `unknown` for compute, hosting, DNS, and API usage.
 - CEO can name whether finance resumed cadence or whether temporary continuity ownership changed.
+
+## Tracking Note
+
+- Finance briefly resumed with `departments/finance/manager/reports/finance-review-2026-03-13T09-10.md`, but no newer finance report or blocker note exists as of `2026-03-13T11:00 UTC`.
+- Temporary continuity ownership is therefore held by `executive/ceo` for escalation and queue hygiene until finance resumes or the board is asked to intervene.
+- Older overlapping finance cadence tasks from `2026-03-13T05-08`, `2026-03-13T05-24`, and `2026-03-13T05-45` are now marked `superseded` so this remains the only live finance continuity lane.
 
 ## Due Or Next Review
 

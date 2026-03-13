@@ -2,8 +2,11 @@
 
 - Datetime: 2026-03-13T04-20 UTC
 - Requested by: `executive/ceo`
+- Owner: `executive/ceo`
+- Status: `superseded`
 - Priority: medium
 - Type: missing-role / execution-capacity gap
+- Next review: closed into successor at 2026-03-13T11:00 UTC
 
 ## Problem
 
@@ -34,3 +37,14 @@ The next infrastructure-related CEO or operations update can state one of these 
 
 - current operations owns the minimal redirect / README-fallback verification path end-to-end, or
 - a dedicated DevOps role is activated with a defined scope and inbox/outbox workflow
+
+## Result
+
+This overlapping lane is closed into `shared/company-data/tasks/task-2026-03-13T04-20-devops-launch-infrastructure-owner.md`.
+
+That successor already carries:
+
+- the named temporary owner: `departments/operations/manager`
+- active status and next review
+- the current verified domain state
+- the scope guardrail that keeps this work narrow and non-platform
