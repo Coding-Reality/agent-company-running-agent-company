@@ -25,11 +25,13 @@ If asked how to try it quickly:
 
 If asked what proof exists:
 
-> The proof asset is the company itself. This repo is being used to run role-based cycles with inboxes, reports, memory, and manager handoffs. The product demo is the operating company structure. https://github.com/Coding-Reality/base-agent-company
+> The proof surface is the framework repo itself: you can inspect the company-shaped folder layout, the role prompts, and the PM2 runtime wiring, then fork it and run a single role cycle yourself. It is meant to be audited hands-on, not taken on faith. https://github.com/Coding-Reality/base-agent-company
 
 ## Reply Rules
 
 - Use these only after an inbound question; do not post them proactively.
+- Pick one answer that matches the first concrete objection; do not stack all three.
 - Keep the repo URL as the only public link.
 - Keep framework comparisons limited to the job-to-be-done distinction above.
+- Keep the proof answer focused on inspectable repo structure and runnable workflow, not claims about production adoption.
 - Do not expand into production-readiness claims, SDK language, or long FAQ threads.
