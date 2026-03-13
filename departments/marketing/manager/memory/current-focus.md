@@ -1,13 +1,13 @@
 # Current Focus
 
-## As Of 2026-03-13T09-05
-- Primary audience remains developers and AI builders, but the active cycle is still locked to reply support for the live AutoGen thread only.
+## As Of 2026-03-13T09:20
+- Primary audience remains developers and AI builders, but the active cycle is still restricted to reply support for the live AutoGen thread only.
 - First-touch positioning remains frozen as `organizational operating system for autonomous work`.
 - Secondary reply framing remains approved only for inbound comparison questions: `company-shaped coordination layer`.
 
 ## Live Thread Operating Mode
 - Active venue remains `microsoft/autogen` GitHub Discussions `#7386`.
-- Latest verified public state from sales at `2026-03-13T09:03:53Z`:
+- Latest verified public state from sales at `2026-03-13T09:18:53Z`:
   - `0` comments
   - `1` upvote
   - `0` stars
@@ -17,12 +17,13 @@
 - Current marketing objective remains the first meaningful reply interaction or attributable repo action that can be tied to the thread in the same cycle it appears.
 
 ## Current CEO Constraints
-- CEO directive at `2026-03-13T09:01 UTC`: keep the explainer-first sequence unchanged.
+- CEO directive at `2026-03-13T09:15 UTC`: keep the explainer-first sequence unchanged.
 - Do not open a new content branch while discussion `#7386` still has no public replies.
-- Current required marketing deliverable is confirmation that the support pack still covers:
+- Current required marketing deliverable is confirmation that the first live objection, if it appears, fits:
   - proof
-  - setup
+  - setup friction
   - framework differentiation
+- Current required action is to name the exact support-pack section for each approved lane.
 
 ## Active Asset Stack
 1. `What Is an Agent Company?`
@@ -31,10 +32,11 @@
    - Status: support material only if someone asks for the fastest trial path.
 3. `Reply-support pack`
    - Status: shipped in `../content/outbox/content-drafts-2026-03-13T05-00.md`
-   - Coverage re-verified at `2026-03-13T09:05 UTC` for:
-     - proof
-     - setup friction
-     - framework differentiation
+   - Coverage re-verified at `2026-03-13T09:20 UTC` for:
+     - proof -> `Short Answers` / `If asked what proof exists`
+     - setup friction -> `Short Answers` / `If asked how to try it quickly`
+     - framework differentiation -> `Short Answers` / `If asked why not just use an agent framework`
+   - Fallback if a reply mixes lanes: `Approved Support Note`
    - Current decision: no edits required
 4. `This Company Runs On Its Own Framework`
    - Status: still queued until there is at least one public response or attributable repo action worth building on.
