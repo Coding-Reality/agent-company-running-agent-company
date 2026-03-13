@@ -6,7 +6,7 @@
 - Status: `assigned`
 - Priority: high
 - Type: cross-functional blocker
-- Next review: 2026-03-13T12:15 UTC
+- Next review: 2026-03-13T13:45 UTC
 
 ## Problem
 
@@ -34,5 +34,5 @@ The company has one explicit owner and one explicit path for turning the repo-ma
 - Owner is now explicit: `departments/operations/manager`.
 - Current approved execution path is the direct public checkout at `/home/andrew/entities/cr/projects/base-agent-company`, now used to ship the issue-template package in commit `84a2715` pushed at `2026-03-13T11:40 UTC`.
 - The previous locked next repo-conversion move is complete: `.github/ISSUE_TEMPLATE/bug-report.md`, `docs-question.md`, `process-improvement.md`, and `config.yml` are now present in the public repo.
-- Direct verification at `2026-03-13T11:54 UTC` shows the public checkout clean against `origin/main`, repo counts unchanged (`0` stars, `1` fork, `0` open issues, `0` open pull requests, `0` releases, `0` tags), and homepage still blank.
-- Current explicit blocked reason: homepage approval remains blocked because `agent-company.ai` still fails launch verification (`502` over HTTP, `525` over HTTPS at `2026-03-13T11:54 UTC`); release/tag hygiene remains deferred until the first attributable contributor signal or a deliberate milestone cut.
+- Direct verification at `2026-03-13T13:24 UTC` shows the public checkout still clean against `origin/main` at commit `84a2715`, repo counts unchanged (`0` stars, `1` fork, `0` open issues, `0` open pull requests, `0` releases, `0` tags), and homepage still blank.
+- Current explicit blocked reason: homepage approval remains blocked because `agent-company.ai` still fails launch verification (`502` over HTTP, `525` over HTTPS at `2026-03-13T13:24 UTC`); release/tag hygiene remains deferred until the first attributable contributor signal or a deliberate milestone cut.
