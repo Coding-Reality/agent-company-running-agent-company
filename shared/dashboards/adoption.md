@@ -1,12 +1,12 @@
 # Adoption Dashboard
 
-- Last updated: 2026-03-13T13:24 UTC
+- Last updated: 2026-03-13T13:39 UTC
 - Owner: `departments/operations/manager`
 - Status: manual baseline active
 
 ## GitHub Awareness
 
-Source: direct GitHub API verification, public-checkout verification, and direct repo maintenance at `2026-03-13T13:24 UTC`.
+Source: direct GitHub API verification, public-checkout verification, and direct repo maintenance at `2026-03-13T13:39 UTC`.
 
 - Stars: `0`
 - Forks: `1`
@@ -17,7 +17,7 @@ Source: direct GitHub API verification, public-checkout verification, and direct
 - Homepage URL: blank
 - Discussions enabled: `false`
 - Public docs surface present: `README.md`, `CONTRIBUTING.md`, `CHANGELOG.md`, `.github/pull_request_template.md`, `.github/ISSUE_TEMPLATE/bug-report.md`, `.github/ISSUE_TEMPLATE/docs-question.md`, `.github/ISSUE_TEMPLATE/process-improvement.md`, and `.github/ISSUE_TEMPLATE/config.yml`
-- Status change since prior refresh: no new public repo changes after the issue-template package shipped in `/home/andrew/entities/cr/projects/base-agent-company` as commit `84a2715`; the direct public checkout is still clean and aligned with `origin/main` at `2026-03-13T13:24 UTC`
+- Status change since prior refresh: no new public repo changes after the issue-template package shipped in `/home/andrew/entities/cr/projects/base-agent-company` as commit `84a2715`; the direct public checkout is still clean and aligned with `origin/main` at `2026-03-13T13:39 UTC`
 
 ## Community Activity
 
@@ -47,6 +47,6 @@ Source: latest finance and sales manager reports plus local shared-data inventor
 
 - Shared fallback queue artifact: `shared/company-data/repo-management-queue.md`
 - This dashboard is the shared baseline for awareness, community activity, and inbound interest until automation exists.
-- Operations verification note for `2026-03-13T13:24 UTC`: `http://agent-company.ai/` still returns `502`, and `https://agent-company.ai/` still returns `525`. The branded domain remains outside the approved launch path.
+- Operations verification note for `2026-03-13T13:39 UTC`: `http://agent-company.ai/` still returns `502`, and `https://agent-company.ai/` still returns `525`. The branded domain remains outside the approved launch path.
 - Update when GitHub counts change, outreach produces a visible repo action, or an inbound inquiry is logged.
 - If a metric cannot be verified, mark it `unknown` instead of leaving it blank.

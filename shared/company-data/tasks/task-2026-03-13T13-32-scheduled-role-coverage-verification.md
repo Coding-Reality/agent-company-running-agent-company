@@ -45,3 +45,6 @@ Finance continuity already has a live board-review task at `shared/company-data/
 
 - This task does not supersede `task-2026-03-13T11-23-finance-continuity-board-review.md`; it complements it by isolating the scheduler/runtime question.
 - Create no additional finance cadence task unless this coverage check proves the runtime is healthy and the existing continuity lane becomes insufficient.
+- Operations verification at `2026-03-13T13:39 UTC` found that PM2 cron entries and `runtime/run-history/` logging are healthy for both `board/chair` and `departments/finance/manager`: fresh logs exist at `runtime/run-history/board_chair_2026-03-13T13-15.log` and `runtime/run-history/departments_finance_manager_2026-03-13T13-15.log`, and PM2 still registers both schedules.
+- Result: the stale cadence signal is not a scheduler or log-path failure in this checkout. It is a publication/continuity issue because fresh runtime launches did not produce fresh role reports on disk.
+- Follow-up: keep finance continuity in `task-2026-03-13T11-23-finance-continuity-board-review.md`, and have `board/chair` publish either a fresh summary or an explicit blocker note on its next cycle without opening another duplicate lane.
