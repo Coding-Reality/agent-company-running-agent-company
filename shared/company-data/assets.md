@@ -3,7 +3,7 @@
 ## Domains
 
 - `agent-company.ai` - purchased 2026-03-13, registrar: NameCheap, status: purchased/unconfigured, owner account: `codingreality`, https and routing is operational, cost: `$186` (human-reported via `executive/ceo/inbox/human-2026-03-13T03-20.md`)
-- `vm on ssh k3s@192.168.135` - internal asset for hosting and compute, cost: `unknown` server is at And1rew132 house.
+- `vm on ssh k3s@192.168.1.135` - internal asset for hosting and compute, cost: `unknown` server is at And1rew132 house.
 
 ## Accounts
 
