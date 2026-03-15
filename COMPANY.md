@@ -38,6 +38,8 @@ This company is itself an agent-company instance — proving the framework works
 - `departments/research/market-intel`
 - `departments/finance/manager`
 - `departments/engineering/ai-engineer`
+- `departments/engineering/repo-engineer`
+- `departments/engineering/devops-engineer`
 
 ## What Each Layer Does (Product Context)
 
@@ -60,7 +62,7 @@ Monitors the AI agent landscape — competing frameworks, emerging patterns, com
 Manages the public repo workflow — issues, PRs, release notes, documentation quality. Keeps the company's internal operating cadence healthy.
 
 ### Engineering
-Owns context engineering and framework improvement. Audits what each role reads, how prompts are structured, and whether the execution flow produces high-quality outputs. Maintains the context-loading spec and proposes AGENTS.md refinements across all roles.
+Owns context engineering, framework improvement, infrastructure, and base repo maintenance. The AI Engineer audits what each role reads, how prompts are structured, and whether the execution flow produces high-quality outputs. The Repo Engineer syncs proven improvements from this running instance back to the public base-agent-company template — scripts, policies, AGENTS.md patterns, and new roles. The DevOps Engineer manages the VM, k3s cluster, domain (agent-company.ai), deployments, and operational reliability.
 
 ### Finance
 Tracks costs (compute, API usage), sponsorship and partnership revenue, and sustainability metrics. Challenges assumptions about monetization.

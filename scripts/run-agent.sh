@@ -10,6 +10,15 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 AGENT_NAME="$1"
 AGENT_DIR="$(cd "$ROOT/$AGENT_NAME" && pwd)"
 
+# Match the PM2 runtime by loading project env vars for direct/manual runs.
+ENV_FILE="$ROOT/.env"
+if [[ -f "$ENV_FILE" ]]; then
+  set -a
+  # shellcheck disable=SC1090
+  source "$ENV_FILE"
+  set +a
+fi
+
 if [[ ! -f "$AGENT_DIR/AGENTS.md" ]]; then
   echo "missing AGENTS.md in $AGENT_DIR" >&2
   exit 1
@@ -60,6 +69,12 @@ Execution requirements:
 - This company is Redmine-native. Role-local inbox/outbox/reports/memory directories are legacy artifacts, not the primary workflow.
 - Before substantive work, check the relevant Redmine issue set and the Redmine wiki page titled Company.
 - If substantive work has no Redmine issue yet, create one or record a concrete escalation that Redmine access is blocked.
+- Treat every run as execution against one live task or issue, not as open-ended discussion.
+- Before finishing, either:
+  - advance one live task or issue with a concrete artifact, status change, assignment, unblock step, or closure; or
+  - mark it blocked with the exact missing dependency, named owner, and next review time.
+- Do not leave a run with only analysis or discussion if a bot-actionable next step exists.
+- If you discover an inactive or unscheduled role owns the work, reactivate it in the same run by updating the live task/issue and assigning the next concrete deliverable.
 - Before finishing, sync any changed status, owner, blocker, scope, or durable decision back to Redmine.
 - Use token-efficient discovery before opening repository documents.
 - Prefer Redmine and shared repository sources over role-local historical files.

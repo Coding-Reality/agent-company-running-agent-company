@@ -47,5 +47,7 @@ module.exports = {
     runAgent("departments/research/market-intel", "0 * * * *"), // run every hour for market intel
     runAgent("departments/finance/manager", "0 */2 * * *"), // run every 2 hours for financial review
     runAgent("departments/engineering/ai-engineer", "30 * * * *"), // run every hour for context engineering audits
+    runAgent("departments/engineering/devops-engineer", "15 */2 * * *"), // run every 2 hours for infrastructure management
+    runAgent("departments/engineering/repo-engineer", "45 */2 * * *"), // run every 2 hours for base repo sync
   ],
 };

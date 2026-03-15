@@ -129,7 +129,4 @@ Redmine is the durable tracker. Local files remain the execution workspace.
 
 ### Preferred Tooling
 
-- Preferred: the Redmine MCP server in `cr/projects/redmine-plugins/redmine-mcp`
-- Fallback: direct Redmine REST API calls with `curl`
-
-Use MCP when it is configured in the runtime. Use direct REST calls when MCP is unavailable or when validating credentials and project existence.
+- Preferred: direct Redmine REST API calls with `curl`
