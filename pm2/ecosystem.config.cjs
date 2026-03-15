@@ -39,15 +39,6 @@ module.exports = {
     runAgent("board/chair", "0 */4 * * *"), // run every 4 hours for strategic oversight
     runAgent("board/strategy-member", "10 */4 * * *"), // run every 4 hours, 10 min after chair
     runAgent("executive/ceo", "*/15 * * * *"), // run every 15 minutes to coordinate execution
-    runAgent("departments/sales/manager", "3,18,33,48 * * * *"), // run every 15 minutes, offset from CEO
-    runAgent("departments/sales/outbound-1", "*/10 * * * *"), // run every 10 minutes for aggressive outreach
-    runAgent("departments/marketing/manager", "5,20,35,50 * * * *"), // run every 15 minutes, offset
-    runAgent("departments/marketing/content", "0,30 * * * *"), // run every 30 minutes for content waves
-    runAgent("departments/operations/manager", "8,23,38,53 * * * *"), // run every 15 minutes for ops review
-    runAgent("departments/research/market-intel", "0 * * * *"), // run every hour for market intel
-    runAgent("departments/finance/manager", "0 */2 * * *"), // run every 2 hours for financial review
-    runAgent("departments/engineering/ai-engineer", "30 * * * *"), // run every hour for context engineering audits
-    runAgent("departments/engineering/devops-engineer", "15 */2 * * *"), // run every 2 hours for infrastructure management
-    runAgent("departments/engineering/repo-engineer", "45 */2 * * *"), // run every 2 hours for base repo sync
+    runAgent("runtime/coordinator", "2,17,32,47 * * * *"), // run every 15 minutes after executive prioritization
   ],
 };

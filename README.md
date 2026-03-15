@@ -24,3 +24,13 @@ It is intentionally meta, but this repo is no longer the primary execution layer
 - [shared/vision/](shared/vision/) — board vision, strategy, product positioning
 - [shared/policies/operating-rules.md](shared/policies/operating-rules.md) — how agents work
 - [pm2/ecosystem.config.cjs](pm2/ecosystem.config.cjs) — scheduled agent runs
+
+## Runtime Model
+
+- PM2 should schedule only:
+  - `board/chair`
+  - `board/strategy-member`
+  - `executive/ceo`
+  - `runtime/coordinator`
+- Department and worker roles should run on demand through `runtime/coordinator`, not as free-running cron jobs.
+- Each downstream run should be bound to one live Redmine issue and one exact success condition.

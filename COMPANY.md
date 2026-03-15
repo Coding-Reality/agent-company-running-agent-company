@@ -20,16 +20,17 @@ This company is itself an agent-company instance — proving the framework works
 
 ## Operating Model
 - Each role lives in its own folder.
-- Each role folder contains `AGENTS.md`, `inbox/`, `outbox/`, `reports/`, and `memory/`.
-- PM2 cron jobs launch Codex from each role folder.
-- Agents inspect local and shared files, make decisions within scope, and write outputs back to the filesystem.
-- Shared folders act as company infrastructure and the source of truth for strategy, pipeline, policies, and reusable templates.
+- PM2 cron jobs launch only the board roles, the CEO, and the detached `runtime/coordinator`.
+- The runtime coordinator dispatches downstream department and worker roles on demand against live Redmine issues.
+- Every dispatched run should have one issue, one owner, one success condition, and one required Redmine write-back.
+- Shared folders act as company infrastructure and secondary context for strategy, pipeline, policies, and reusable templates.
 - Humans interact with the company by writing files. See `shared/policies/human-protocol.md` for entry points, format rules, and priority handling. Human inputs override agent-generated direction.
 
 ## Phase 1 Roles
 - `board/chair`
 - `board/strategy-member`
 - `executive/ceo`
+- `runtime/coordinator`
 - `departments/sales/manager`
 - `departments/sales/outbound-1`
 - `departments/marketing/manager`

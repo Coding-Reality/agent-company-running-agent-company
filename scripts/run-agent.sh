@@ -1,14 +1,15 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if [[ $# -ne 1 ]]; then
-  echo "usage: $0 <agent-dir>" >&2
+if [[ $# -lt 1 || $# -gt 2 ]]; then
+  echo "usage: $0 <agent-dir> [dispatch-brief-file]" >&2
   exit 1
 fi
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 AGENT_NAME="$1"
 AGENT_DIR="$(cd "$ROOT/$AGENT_NAME" && pwd)"
+BRIEF_FILE="${2:-${AGENT_EXTRA_PROMPT_FILE:-}}"
 
 # Match the PM2 runtime by loading project env vars for direct/manual runs.
 ENV_FILE="$ROOT/.env"
@@ -21,6 +22,11 @@ fi
 
 if [[ ! -f "$AGENT_DIR/AGENTS.md" ]]; then
   echo "missing AGENTS.md in $AGENT_DIR" >&2
+  exit 1
+fi
+
+if [[ -n "$BRIEF_FILE" && ! -f "$BRIEF_FILE" ]]; then
+  echo "missing dispatch brief: $BRIEF_FILE" >&2
   exit 1
 fi
 
@@ -104,6 +110,14 @@ Read this role specification now and then continue working with Redmine as the p
 EOF
 
 cat "$AGENT_DIR/AGENTS.md" >>"$PROMPT_FILE"
+
+if [[ -n "$BRIEF_FILE" ]]; then
+  cat >>"$PROMPT_FILE" <<EOF
+
+Additional dispatch brief for this run:
+EOF
+  cat "$BRIEF_FILE" >>"$PROMPT_FILE"
+fi
 
 # ── Notify: agent run starting ──────────────────────────────────
 tg_send "🟢 *[$AGENT_NAME]* run starting"
