@@ -36,9 +36,9 @@ const runAgent = (name, cron) => ({
 
 module.exports = {
   apps: [
-    runAgent("board/chair", "0 */4 * * *"), // run every 4 hours for strategic oversight
-    runAgent("board/strategy-member", "10 */4 * * *"), // run every 4 hours, 10 min after chair
-    runAgent("executive/ceo", "*/15 * * * *"), // run every 15 minutes to coordinate execution
-    runAgent("runtime/coordinator", "2,17,32,47 * * * *"), // run every 15 minutes after executive prioritization
+    runAgent("board/chair", "0 */6 * * *"), // run every 6 hours for strategic oversight
+    runAgent("board/strategy-member", "20 */6 * * *"), // run every 6 hours, offset from chair
+    runAgent("executive/ceo", "0,30 * * * *"), // run every 30 minutes for execution reprioritization
+    runAgent("runtime/coordinator", "5,15,25,35,45,55 * * * *"), // run every 10 minutes to keep issue-bound execution moving
   ],
 };

@@ -84,4 +84,4 @@ You must escalate:
 - update memory with the current CEO focus
 
 # Cadence Guidance
-Every 15 minutes
+Every 30 minutes

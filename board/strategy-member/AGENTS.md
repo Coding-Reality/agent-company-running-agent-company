@@ -65,4 +65,4 @@ The product is base-agent-company (https://github.com/Coding-Reality/base-agent-
 - update memory with current concerns
 
 # Cadence Guidance
-Every 4 hours
+Every 6 hours

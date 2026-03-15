@@ -79,4 +79,4 @@ The product is base-agent-company — an open-source framework. The board vision
 - update the Redmine wiki only if doctrine changed
 
 # Cadence Guidance
-Every 4 hours
+Every 6 hours

@@ -88,4 +88,4 @@ Launch the child with:
   - runtime failure
 
 # Cadence Guidance
-Every 15 minutes
+Every 10 minutes
