@@ -24,12 +24,14 @@ function Hero() {
       <div className="hero__inner">
         <h1 className="hero__title">
           A company that runs itself<br />
-          <span className="hero__accent">from a Git repository</span>
+          <span className="hero__accent">structured by agents, for agents</span>
         </h1>
         <p className="hero__subtitle">
-          base-agent-company is a filesystem-based framework for autonomous business operations.
-          AI agents run real departments — marketing, sales, finance, engineering, operations —
-          coordinated through files, inboxes, and outboxes in a single repo.
+          base-agent-company is a framework for autonomous business operations.
+          The repository is the org chart — its structure is the agents' knowledge of who does what,
+          how they communicate, and what they know. AI agents run real departments — marketing, sales,
+          finance, engineering, operations — and integrate with external tools like Redmine for
+          issue tracking, wikis, and scheduling as the company grows.
         </p>
         <div className="hero__actions">
           <a
@@ -54,22 +56,22 @@ function HowItWorks() {
     {
       title: 'Fork the repo',
       description:
-        'Clone base-agent-company. The filesystem is the org chart: departments, roles, inboxes, outboxes, memory.',
+        'Clone base-agent-company. The directory structure is the org chart — departments, roles, and knowledge areas that agents can immediately understand and navigate.',
     },
     {
       title: 'Configure your company',
       description:
-        'Edit COMPANY.md with your mission, goals, and policies. Each role has an AGENTS.md that defines scope, responsibilities, and decision authority.',
+        'Edit COMPANY.md with your mission, goals, and policies. Each role has an AGENTS.md that defines scope, responsibilities, decision authority, and what tools the role uses.',
     },
     {
       title: 'Run agents',
       description:
-        'Point AI agents at roles. They read their instructions, check inboxes, do work, write reports, and coordinate through the filesystem.',
+        'Point AI agents at roles. They read their instructions, check inboxes, do work, write reports, and coordinate through the filesystem and integrated tools.',
     },
     {
-      title: 'Ship and iterate',
+      title: 'Grow the stack',
       description:
-        'Everything is version-controlled. Review agent output in PRs. Adjust policies. Add roles. Scale departments.',
+        'Start with files. Add Redmine for issue tracking and wikis, Telegram for notifications, CI/CD for deployments. The framework scales from a single repo to a full operating system.',
     },
   ];
 
@@ -94,9 +96,9 @@ function HowItWorks() {
 function Features() {
   const features = [
     {
-      title: 'Filesystem-native',
+      title: 'Structure as knowledge',
       description:
-        'No databases, no APIs, no SaaS. The repository is the company. Every role, decision, and artifact lives in files that Git tracks.',
+        'The repo layout is the org chart. Directories encode who reports to whom, what each role owns, and where knowledge lives. Agents understand the company by reading the structure.',
     },
     {
       title: 'Real departments',
@@ -106,12 +108,12 @@ function Features() {
     {
       title: 'Agent-agnostic',
       description:
-        'Works with any AI agent that can read files and write files. Claude, GPT, open-source models — plug in whatever you want.',
+        'Works with any AI agent that can read files and use tools. Claude, GPT, open-source models — plug in whatever you want.',
     },
     {
-      title: 'Coordination through convention',
+      title: 'Grows beyond the filesystem',
       description:
-        'Agents communicate via inbox/outbox patterns and shared dashboards. No custom orchestration layer needed.',
+        'Start with files and Git. The live instance uses Redmine for issue tracking, wiki knowledge bases, and scheduling. Telegram for notifications. Argo CD for deployments. Add what you need.',
     },
     {
       title: 'Version-controlled operations',
@@ -121,7 +123,7 @@ function Features() {
     {
       title: 'Extensible',
       description:
-        'Add new roles, departments, workflows, and integrations by adding directories and AGENTS.md files. The framework grows with your needs.',
+        'Add new roles, departments, integrations, and tools by adding directories and AGENTS.md files. The framework grows with your needs.',
     },
   ];
 
@@ -151,7 +153,9 @@ function LiveProof() {
           This website is deployed and maintained by an instance of agent-company.
           The <a href="https://github.com/Coding-Reality/agent-company-running-agent-company" target="_blank" rel="noopener noreferrer">
           agent-company-running-agent-company</a> repo uses base-agent-company to run its own
-          marketing, operations, and engineering — including deploying this page.
+          marketing, operations, and engineering — including deploying this page. It uses
+          Redmine as its knowledge base and project tracker, Telegram for real-time notifications,
+          and Argo CD for GitOps deployments to Kubernetes.
         </p>
       </div>
     </section>
