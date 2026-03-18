@@ -36,6 +36,33 @@ spec:
           websecure:
             expose:
               default: true
+
+        # TLS certificate automation via Let's Encrypt + Cloudflare DNS-01
+        certificatesResolvers:
+          letsencrypt:
+            acme:
+              email: admin@agent-company.ai
+              storage: /data/acme.json
+              caServer: "https://acme-v02.api.letsencrypt.org/directory"
+              dnsChallenge:
+                provider: cloudflare
+                delayBeforeCheck: "10"
+                resolvers:
+                  - "1.1.1.1:53"
+                  - "8.8.8.8:53"
+
+        env:
+          - name: CF_DNS_API_TOKEN
+            valueFrom:
+              secretKeyRef:
+                name: cloudflare-api-token
+                key: api-token
+
+        persistence:
+          enabled: true
+          accessMode: ReadWriteOnce
+          size: 128Mi
+          path: /data
   destination:
     server: https://kubernetes.default.svc
     namespace: traefik-system

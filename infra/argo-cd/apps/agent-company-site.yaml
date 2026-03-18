@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: agent-company-root
+  name: agent-company-site
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -10,16 +10,14 @@ spec:
   source:
     repoURL: https://github.com/Coding-Reality/agent-company-running-agent-company.git
     targetRevision: main
-    path: infra/argo-cd/apps
-    directory:
-      recurse: true
-      include: "{traefik.yaml,whoami.yaml,agent-company-site.yaml}"
+    path: infra/argo-cd/manifests/agent-company-site
   destination:
     server: https://kubernetes.default.svc
-    namespace: argocd
+    namespace: agent-company-site
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
+      - ServerSideApply=true

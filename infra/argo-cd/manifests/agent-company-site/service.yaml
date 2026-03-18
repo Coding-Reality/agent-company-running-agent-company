@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: agent-company-site
+  namespace: agent-company-site
+  labels:
+    app: agent-company-site
+spec:
+  type: ClusterIP
+  selector:
+    app: agent-company-site
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8080
+      protocol: TCP

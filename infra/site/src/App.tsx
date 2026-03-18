@@ -1,0 +1,211 @@
+import { useState } from 'react';
+
+function Nav() {
+  return (
+    <nav className="nav">
+      <div className="nav__inner">
+        <a href="/" className="nav__brand">agent-company</a>
+        <div className="nav__links">
+          <a href="https://github.com/Coding-Reality/base-agent-company" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#features">Features</a>
+          <a href="#get-started">Get Started</a>
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+function Hero() {
+  return (
+    <section className="hero">
+      <div className="hero__inner">
+        <h1 className="hero__title">
+          A company that runs itself<br />
+          <span className="hero__accent">from a Git repository</span>
+        </h1>
+        <p className="hero__subtitle">
+          base-agent-company is a filesystem-based framework for autonomous business operations.
+          AI agents run real departments — marketing, sales, finance, engineering, operations —
+          coordinated through files, inboxes, and outboxes in a single repo.
+        </p>
+        <div className="hero__actions">
+          <a
+            href="https://github.com/Coding-Reality/base-agent-company"
+            className="btn btn--primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View on GitHub
+          </a>
+          <a href="#how-it-works" className="btn btn--secondary">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function HowItWorks() {
+  const steps = [
+    {
+      title: 'Fork the repo',
+      description:
+        'Clone base-agent-company. The filesystem is the org chart: departments, roles, inboxes, outboxes, memory.',
+    },
+    {
+      title: 'Configure your company',
+      description:
+        'Edit COMPANY.md with your mission, goals, and policies. Each role has an AGENTS.md that defines scope, responsibilities, and decision authority.',
+    },
+    {
+      title: 'Run agents',
+      description:
+        'Point AI agents at roles. They read their instructions, check inboxes, do work, write reports, and coordinate through the filesystem.',
+    },
+    {
+      title: 'Ship and iterate',
+      description:
+        'Everything is version-controlled. Review agent output in PRs. Adjust policies. Add roles. Scale departments.',
+    },
+  ];
+
+  return (
+    <section id="how-it-works" className="section">
+      <div className="section__inner">
+        <h2 className="section__title">How It Works</h2>
+        <div className="steps">
+          {steps.map((step, i) => (
+            <div key={i} className="step">
+              <div className="step__number">{i + 1}</div>
+              <h3 className="step__title">{step.title}</h3>
+              <p className="step__desc">{step.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Features() {
+  const features = [
+    {
+      title: 'Filesystem-native',
+      description:
+        'No databases, no APIs, no SaaS. The repository is the company. Every role, decision, and artifact lives in files that Git tracks.',
+    },
+    {
+      title: 'Real departments',
+      description:
+        'Marketing, Sales, Finance, Engineering, Operations — each with managers, specialists, inboxes, and outboxes. Not a toy demo.',
+    },
+    {
+      title: 'Agent-agnostic',
+      description:
+        'Works with any AI agent that can read files and write files. Claude, GPT, open-source models — plug in whatever you want.',
+    },
+    {
+      title: 'Coordination through convention',
+      description:
+        'Agents communicate via inbox/outbox patterns and shared dashboards. No custom orchestration layer needed.',
+    },
+    {
+      title: 'Version-controlled operations',
+      description:
+        'Every report, every decision, every handoff is a commit. Full audit trail. Easy rollback. Meaningful diffs.',
+    },
+    {
+      title: 'Extensible',
+      description:
+        'Add new roles, departments, workflows, and integrations by adding directories and AGENTS.md files. The framework grows with your needs.',
+    },
+  ];
+
+  return (
+    <section id="features" className="section section--alt">
+      <div className="section__inner">
+        <h2 className="section__title">Features</h2>
+        <div className="features-grid">
+          {features.map((f, i) => (
+            <div key={i} className="feature-card">
+              <h3 className="feature-card__title">{f.title}</h3>
+              <p className="feature-card__desc">{f.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function LiveProof() {
+  return (
+    <section className="section">
+      <div className="section__inner">
+        <h2 className="section__title">This site is the proof</h2>
+        <p className="section__subtitle">
+          This website is deployed and maintained by an instance of agent-company.
+          The <a href="https://github.com/Coding-Reality/agent-company-running-agent-company" target="_blank" rel="noopener noreferrer">
+          agent-company-running-agent-company</a> repo uses base-agent-company to run its own
+          marketing, operations, and engineering — including deploying this page.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+function GetStarted() {
+  return (
+    <section id="get-started" className="section section--alt">
+      <div className="section__inner">
+        <h2 className="section__title">Get Started</h2>
+        <div className="get-started__content">
+          <pre className="code-block">
+{`git clone https://github.com/Coding-Reality/base-agent-company.git my-company
+cd my-company
+# Edit COMPANY.md with your mission
+# Edit departments/*/AGENTS.md to configure roles
+# Point your AI agents at the roles and run them`}
+          </pre>
+          <p className="get-started__note">
+            Read the <a href="https://github.com/Coding-Reality/base-agent-company/blob/main/README.md" target="_blank" rel="noopener noreferrer">
+            README</a> for full setup instructions, or explore the{' '}
+            <a href="https://github.com/Coding-Reality/agent-company-running-agent-company" target="_blank" rel="noopener noreferrer">
+            live production instance</a> to see how a real company uses the framework.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="footer">
+      <div className="footer__inner">
+        <p>
+          Built by <a href="https://coding-reality.com" target="_blank" rel="noopener noreferrer">Coding Reality</a>.
+          Open source on <a href="https://github.com/Coding-Reality/base-agent-company" target="_blank" rel="noopener noreferrer">GitHub</a>.
+        </p>
+      </div>
+    </footer>
+  );
+}
+
+export default function App() {
+  return (
+    <>
+      <Nav />
+      <Hero />
+      <HowItWorks />
+      <Features />
+      <LiveProof />
+      <GetStarted />
+      <Footer />
+    </>
+  );
+}
