@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 function Nav() {
   return (
     <nav className="nav">
@@ -10,6 +8,8 @@ function Nav() {
             GitHub
           </a>
           <a href="#how-it-works">How It Works</a>
+          <a href="#runtime">Runtime</a>
+          <a href="#extensions">Extensions</a>
           <a href="#features">Features</a>
           <a href="#get-started">Get Started</a>
         </div>
@@ -64,14 +64,14 @@ function HowItWorks() {
         'Edit COMPANY.md with your mission, goals, and policies. Each role has an AGENTS.md that defines scope, responsibilities, decision authority, and what tools the role uses.',
     },
     {
-      title: 'Run agents',
+      title: 'Start the runtime',
       description:
-        'Point AI agents at roles. They read their instructions, check inboxes, do work, write reports, and coordinate through the filesystem and integrated tools.',
+        'Run pm2 start pm2/ecosystem.config.cjs to launch the scheduling engine. The coordinator runs on a cron cycle, dispatching agents against your highest-priority work.',
     },
     {
       title: 'Grow the stack',
       description:
-        'Start with files. Add Redmine for issue tracking and wikis, Telegram for notifications, CI/CD for deployments. The framework scales from a single repo to a full operating system.',
+        'Start with files. Add extensions for Redmine, Telegram, or build your own. The framework scales from a single repo to a full operating system.',
     },
   ];
 
@@ -87,6 +87,139 @@ function HowItWorks() {
               <p className="step__desc">{step.description}</p>
             </div>
           ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Runtime() {
+  return (
+    <section id="runtime" className="section section--alt">
+      <div className="section__inner">
+        <h2 className="section__title">The Runtime Engine</h2>
+        <p className="section__subtitle">
+          Agents don't run themselves. The PM2-based runtime engine is the heartbeat of the company —
+          it schedules agent runs on cron cycles, manages the coordinator that dispatches work,
+          and keeps logs of every execution.
+        </p>
+
+        <div className="runtime-grid">
+          <div className="runtime-card">
+            <h3 className="runtime-card__title">PM2 Scheduler</h3>
+            <p className="runtime-card__desc">
+              Each role is a PM2 process with a cron schedule. Strategic roles (board, CEO) run on
+              fixed intervals. The coordinator runs every 10 minutes and dispatches operational
+              agents on demand against specific tasks.
+            </p>
+            <pre className="code-block code-block--small">
+{`# Start the company
+pm2 start pm2/ecosystem.config.cjs
+
+# Monitor all agents
+pm2 monit
+
+# Check logs
+pm2 logs`}
+            </pre>
+          </div>
+
+          <div className="runtime-card">
+            <h3 className="runtime-card__title">The Coordinator</h3>
+            <p className="runtime-card__desc">
+              A meta-agent that reads open issues, identifies the highest-priority work,
+              creates a dispatch brief with success criteria and scope guardrails,
+              then launches exactly one downstream agent per cycle. After the child exits,
+              it verifies the task was materially advanced.
+            </p>
+          </div>
+
+          <div className="runtime-card">
+            <h3 className="runtime-card__title">run-agent.sh</h3>
+            <p className="runtime-card__desc">
+              The execution engine behind every agent run. It builds a prompt from the role's
+              AGENTS.md, injects active extension prompts and policies, runs lifecycle hooks,
+              then executes the AI agent. Everything is logged and timestamped in run history.
+            </p>
+          </div>
+
+          <div className="runtime-card">
+            <h3 className="runtime-card__title">Scheduling Models</h3>
+            <p className="runtime-card__desc">
+              Start simple with all agents on cron. Evolve to coordinator-dispatch where strategic
+              roles run on schedule and operational roles are launched on demand against specific
+              issues. The live production instance uses coordinator-dispatch with Redmine integration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Extensions() {
+  const extensions = [
+    {
+      name: 'Telegram',
+      status: 'Bundled',
+      description:
+        'Real-time notifications on agent run start/end. Agents can also send messages mid-run. Drop-in setup with a bot token and chat ID.',
+      env: 'TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID',
+    },
+    {
+      name: 'Redmine',
+      status: 'Bundled',
+      description:
+        'Makes the company Redmine-native. Agents use issues as their task queue and wiki pages as shared knowledge. Includes authority policies for what agents can and cannot modify.',
+      env: 'REDMINE_BASE_URL, REDMINE_API_KEY',
+    },
+    {
+      name: 'Your own',
+      status: 'Build it',
+      description:
+        'Create an extension.json, add a prompt.md for agent instructions, scripts for lifecycle hooks, and policies for governance. Drop the directory into extensions/ and restart PM2.',
+      env: 'Whatever you need',
+    },
+  ];
+
+  return (
+    <section id="extensions" className="section">
+      <div className="section__inner">
+        <h2 className="section__title">Extensions</h2>
+        <p className="section__subtitle">
+          Extensions are drop-in plugins that augment what agents can do. Each extension lives in a
+          directory under <code>extensions/</code> and can inject prompts into every agent,
+          add governance policies, declare environment variables, and run lifecycle hooks
+          before and after each agent execution.
+        </p>
+
+        <div className="extensions-grid">
+          {extensions.map((ext, i) => (
+            <div key={i} className="extension-card">
+              <div className="extension-card__header">
+                <h3 className="extension-card__name">{ext.name}</h3>
+                <span className={`extension-card__status extension-card__status--${ext.status === 'Bundled' ? 'bundled' : 'custom'}`}>
+                  {ext.status}
+                </span>
+              </div>
+              <p className="extension-card__desc">{ext.description}</p>
+              <div className="extension-card__env">
+                <code>{ext.env}</code>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="extension-structure">
+          <h3 className="extension-structure__title">Extension structure</h3>
+          <pre className="code-block code-block--small">
+{`extensions/
+  my-extension/
+    extension.json   # name, env vars, lifecycle hooks
+    prompt.md        # injected into every agent's prompt
+    scripts/         # pre-run and post-run hook scripts
+    policies/        # governance docs agents must follow`}
+          </pre>
         </div>
       </div>
     </section>
@@ -171,9 +304,18 @@ function GetStarted() {
           <pre className="code-block">
 {`git clone https://github.com/Coding-Reality/base-agent-company.git my-company
 cd my-company
-# Edit COMPANY.md with your mission
+
+# Configure your company
+# Edit COMPANY.md with your mission and goals
 # Edit departments/*/AGENTS.md to configure roles
-# Point your AI agents at the roles and run them`}
+
+# Add your secrets
+cp .env.example .env
+# Set OPENAI_API_KEY, TELEGRAM_BOT_TOKEN, etc.
+
+# Start the runtime engine
+pm2 start pm2/ecosystem.config.cjs
+pm2 monit`}
           </pre>
           <p className="get-started__note">
             Read the <a href="https://github.com/Coding-Reality/base-agent-company/blob/main/README.md" target="_blank" rel="noopener noreferrer">
@@ -206,6 +348,8 @@ export default function App() {
       <Nav />
       <Hero />
       <HowItWorks />
+      <Runtime />
+      <Extensions />
       <Features />
       <LiveProof />
       <GetStarted />
